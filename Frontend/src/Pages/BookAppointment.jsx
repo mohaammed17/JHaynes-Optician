@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "animate.css";
 
-const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const apiUrl = import.meta.env.PROD
+  ? "https://j-haynes-optician.vercel.app"
+  : (import.meta.env.VITE_API_URL || "http://localhost:5000");
 
 const BookAppointment = () => {
   const initialState = {
