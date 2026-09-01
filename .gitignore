@@ -1,0 +1,19 @@
+# Environment variables and deployment state
+**/.env
+**/.env.*
+!**/.env.example
+**/.vercel/
+
+# Generated dependencies and build output
+**/node_modules/
+**/dist/
+
+# Python cache files
+**/__pycache__/
+*.py[cod]
+
+# Local editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
