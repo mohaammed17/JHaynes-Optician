@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 load_dotenv()
 EMAIL_USER = os.getenv("EMAIL_USER")
 EMAIL_PASS = os.getenv("EMAIL_PASS")
-DOCTOR_EMAIL = os.getenv("DOCTOR_EMAIL")  # The email to which the appointment emails will be sent
+APPOINTMENT_EMAIL = os.getenv("APPOINTMENT_EMAIL", "jhaynesoptician@gmail.com")
 SENDER_EMAIL = os.getenv("SENDER_EMAIL")  # The email from which the emails will be sent
 PORT = int(os.getenv("PORT", "5000"))
 API_KEY = os.getenv("SENDINBLUE_API_KEY")
@@ -22,8 +22,8 @@ app.config['APPLICATION_ROOT'] = '/backend'
 CORS(app)
 
 def send_sendinblue_email(data):
-    # Use the doctor email from .env as the recipient
-    to_email = DOCTOR_EMAIL
+    # Send every appointment request to the J Haynes practice inbox.
+    to_email = APPOINTMENT_EMAIL
     # Use SENDER_EMAIL from .env or fallback to a default value
     sender_email = SENDER_EMAIL or "postmaster@jhaynesoptician.com"
     
@@ -34,7 +34,7 @@ def send_sendinblue_email(data):
     html_message = f"""
     <html>
       <body style="font-family: Arial, sans-serif; font-size: 14px; color: #333;">
-        <h3>Booking Appointment Request</h3>
+        <h3>J Haynes Optician Appointment Request</h3>
         <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
           <tr style="background-color: #f2f2f2;">
             <th align="left">Field</th>
@@ -91,7 +91,7 @@ def send_sendinblue_email(data):
         "to": [
             {
                 "email": to_email,
-                "name": "Glenfield opticians"
+                "name": "J Haynes Optician"
             }
         ],
         "subject": subject,

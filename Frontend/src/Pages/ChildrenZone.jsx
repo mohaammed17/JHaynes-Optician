@@ -102,7 +102,7 @@ const ChildrenZone = () => {
                 A bright smile begins with great vision. Ensure your child’s eyes are well cared for – book a sight test today!
               </p>
               <p className="fs-4 fw-bold">
-                Call: <span style={{ color: '#0d6efd' }}>0116 287 4357</span>
+                Call: <span style={{ color: 'var(--jh-copper)', fontWeight: 700 }}>01509 260023</span>
               </p>
             </div>
             <div className="col-md-4">

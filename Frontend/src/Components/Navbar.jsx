@@ -32,7 +32,7 @@ function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-    <nav className="navbar navbar-expand-lg bg-white shadow-sm py-2">
+    <nav className="site-navbar navbar navbar-expand-lg py-2">
         <div className="container-fluid px-4">
           {/* Brand/Logo */}
           <Link to="/" className="navbar-brand d-flex align-items-center">

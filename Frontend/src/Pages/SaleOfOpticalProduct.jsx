@@ -18,7 +18,7 @@ const SaleOfOpticalProduct = () => {
           <div className="col-lg-10">
             <div className="card border-0 shadow rounded-4 p-4 bg-white">
               <p className="text-muted" style={{ textAlign: 'justify' }}>
-                At Glenfield Opticians, we take pride in offering a wide and carefully curated selection of optical products to meet the diverse needs of our patients. With over 500 frame styles available on display, you’ll find something to suit every age, face shape, and personal style.
+                At J Haynes Optician, we take pride in offering a wide and carefully curated selection of optical products to meet the diverse needs of our patients. With over 500 frame styles available on display, you’ll find something to suit every age, face shape, and personal style.
               </p>
               <h5 className="mt-4 text-info">Eyewear Collection</h5>
               <p className="text-muted" style={{ textAlign: 'justify' }}>

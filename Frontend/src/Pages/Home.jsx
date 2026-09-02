@@ -36,8 +36,8 @@ const Home = () => {
   const slides = [
     {
       image: slide1,
-      title: "Welcome to Glenfield Opticians",
-      subtitle: "Your trusted local optician in Leicester",
+      title: "Welcome to J Haynes Optician",
+      subtitle: "Your trusted local optician in Loughborough",
       button: "Learn More",
       path: "#about"
     },
@@ -57,7 +57,7 @@ const Home = () => {
     },
     {
       image: brandGraphic,
-      title: "Glenfield Opticians",
+      title: "J Haynes Optician",
       subtitle: "Your local community optometrist.",
       button: "Our Services",
       path: "#services"
@@ -205,7 +205,7 @@ const Home = () => {
             <div data-aos="zoom-in-up" className="card h-100 shadow-sm border-0 rounded-4 p-3">
               <h5 className="fw-bold text-info text-center"><strong>About Us</strong></h5>
               <p className="text-muted fw-bold" style={{ textAlign: 'justify' }}>
-                We are independent opticians in Glenfield, Leicester, and since 2009 we have been dedicated to looking after your eyes. We pride ourselves on providing a professional, personal, and friendly service to the community, which may not always be possible at regular high-street practices. Whether you require spectacles or not, we are committed to delivering the highest level of eye care. We offer private eye care and have been awarded a contract by the National Health Service (NHS) to provide NHS-funded eye-care services.
+                We are independent opticians in Loughborough, dedicated to looking after your eyes. We pride ourselves on providing a professional, personal, and friendly service to the community, which may not always be possible at regular high-street practices. Whether you require spectacles or not, we are committed to delivering the highest level of eye care. We offer private eye care and have been awarded a contract by the National Health Service (NHS) to provide NHS-funded eye-care services.
               </p>
             </div>
           </div>
@@ -227,31 +227,35 @@ const Home = () => {
               <tbody>
                 <tr>
                   <td>Monday</td>
-                  <td>9.30am to 5.00pm</td>
+                  <td>By appointment only</td>
                 </tr>
                 <tr>
                   <td>Tuesday</td>
-                  <td>9.30am to 5.00pm</td>
+                  <td>9:30 am to 1:00 pm</td>
                 </tr>
                 <tr>
                   <td>Wednesday</td>
-                  <td>9.30am to 5.00pm</td>
+                  <td>10:00 am to 4:00 pm</td>
                 </tr>
                 <tr>
                   <td>Thursday</td>
-                  <td>9.30am to 5.00pm</td>
+                  <td>10:00 am to 4:00 pm</td>
                 </tr>
                 <tr>
                   <td>Friday</td>
-                  <td>9.30am to 5.00pm</td>
+                  <td>10:00 am to 4:00 pm</td>
                 </tr>
                 <tr>
                   <td>Saturday</td>
-                  <td>By appointments only</td>
+                  <td>By appointment only</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>Closed</td>
                 </tr>
                 <tr>
                   <td colSpan="2" className="text-center">
-                    <strong>Closed on Sundays, bank holidays, and between 12:00 PM and 2:00 PM on Fridays.</strong>
+                    <strong>Closed on bank holidays.</strong>
                   </td>
                 </tr>
               </tbody>
@@ -434,18 +438,26 @@ const Home = () => {
       <section className="location-section py-5">
         <div data-aos="zoom-in-up" className="container text-center">
           <h2>Find Us</h2>
-          <p>93 Dominion Road, Glenfield, Leicestershire, LE3 8JB</p>
+          <p>35 High Street, Loughborough, Leicestershire, LE11 2PZ</p>
           <div className="embed-responsive embed-responsive-16by9">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.620340897055!2d-1.196255084188007!3d52.64499317984143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48775e1878d02ad9%3A0xef2a72f482e58b6d!2sGlenfield%20Opticians!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk"
+              src="https://www.google.com/maps?q=J%20Haynes%20Optician%2C%2035%20High%20Street%2C%20Loughborough%2C%20LE11%202PZ&output=embed"
               height="300"
               style={{ width: "100%" }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Glenfield Opticians Location"
+              title="J Haynes Optician location"
             ></iframe>
           </div>
+          <a
+            href="https://share.google/23I8ABdBMp5cA5UcN"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary mt-3"
+          >
+            Get Directions
+          </a>
         </div>
       </section>
     </div>

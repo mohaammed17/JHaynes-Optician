@@ -20,7 +20,7 @@ const OpticalCoherenceTomography = () => {
                 Unlike traditional methods, OCT allows optometrists to view the layers of the retina in remarkable detail — enabling more accurate diagnoses, earlier intervention, and improved treatment outcomes.
               </p>
               <p className="text-muted" style={{ textAlign: 'justify' }}>
-                At Glenfield Opticians, we offer OCT as an additional diagnostic service for patients who wish to have a more thorough eye health assessment. The results of the scan are displayed on a large screen, where our optometrist will explain the findings in detail.
+                At J Haynes Optician, we offer OCT as an additional diagnostic service for patients who wish to have a more thorough eye health assessment. The results of the scan are displayed on a large screen, where our optometrist will explain the findings in detail.
               </p>
               <p className="text-muted" style={{ textAlign: 'justify' }}>
                 If the results indicate the need for further investigation, we will arrange a specialist referral promptly to ensure you receive the necessary care without delay.

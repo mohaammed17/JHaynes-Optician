@@ -20,7 +20,7 @@ const HomeVisit = () => {
             <h5 className="mt-4 text-info">How does eye care at home work?</h5>
             <p className="text-muted">
               The first thing to do is make an appointment. This can be for you or for someone you know. Simply call us on
-              <strong> 0116 2874357</strong> or <strong>07860479997</strong>, and we'll take a few details to ensure that
+              <strong> 01509 260023</strong>, and we'll take a few details to ensure that
               you, or the person you are calling on behalf of, are eligible for a free home eye test. We'll then arrange a
               convenient time to visit the patient, either in their own home or in a care home.
             </p>

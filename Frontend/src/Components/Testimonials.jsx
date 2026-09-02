@@ -148,7 +148,7 @@ const Testimonials = () => {
             aria-hidden="true"
             style={{
               display: 'inline-block',
-              backgroundColor: 'rgba(0,0,0,0.6)',
+              backgroundColor: 'var(--jh-teal-800)',
               borderRadius: '50%',
               padding: '10px',
               color: 'white',
@@ -164,7 +164,7 @@ const Testimonials = () => {
             aria-hidden="true"
             style={{
               display: 'inline-block',
-              backgroundColor: 'rgba(0,0,0,0.6)',
+              backgroundColor: 'var(--jh-teal-800)',
               borderRadius: '50%',
               padding: '10px',
               color: 'white',
@@ -195,7 +195,7 @@ const Testimonials = () => {
       <div className="text-center mt-4">
         <Button
           variant="outline-primary"
-          href="https://www.google.com/search?sca_esv=8bb619a2aead404d&rlz=1C1GCEU_enGB1159GB1160&biw=1280&bih=631&sxsrf=AHTn8zrRVDy6fNK7BBeFDPOW4qdSv_tjxw:1747735098792&si=APYL9bvoDGWmsM6h2lfKzIb8LfQg_oNQyUOQgna9TyfQHAoqUpL6_cokUoe-GOMv52qkm-7Cf8sLyo9tcy2dwYG-CuYmrjgpro-N1YBEBw5srStxWcg1J5RJkMEg7PKX4Xg2xPHjNy71zmkCod5ZnK28bm2raIzCFA%3D%3D&q=Glenfield+Opticians+Reviews"
+          href="https://www.google.com/search?q=J+Haynes+Optician+Loughborough+reviews"
           target="_blank"
           style={{ fontWeight: 'bold', padding: '10px 20px', fontSize: '1rem' }}
         >

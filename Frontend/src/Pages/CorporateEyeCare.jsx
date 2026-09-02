@@ -16,7 +16,7 @@ const CorporateEyeCare = () => {
               </p>
               <p className="text-muted" style={{ textAlign: 'justify' }}>
                 With the growing number of patients using a VDU screen, it is important that employers comply with the 
-                <strong> Health and Safety (Display Screen Equipment) Regulations 1992</strong>. At Glenfield Opticians, we offer a simple, straightforward Eyecare scheme:
+                <strong> Health and Safety (Display Screen Equipment) Regulations 1992</strong>. At J Haynes Optician, we offer a simple, straightforward Eyecare scheme:
               </p>
               <ul className="text-muted ps-3">
                 <li>Provide your employees with our Eyecare plan</li>
@@ -29,8 +29,8 @@ const CorporateEyeCare = () => {
                 If your company is already affiliated with an Eyecare voucher scheme, we can provide spectacles to suit all.
               </p>
               <p className="text-muted" style={{ textAlign: 'justify' }}>
-                Please contact us on <strong ><a href="tel:01162874357">0116 2874357</a></strong> for further information on how Glenfield Opticians can work with your company,
-                or email us at <a href="mailto:info@glenfieldopticians.co.uk">info@glenfieldopticians.co.uk</a>.
+                Please contact us on <strong><a href="tel:01509260023">01509 260023</a></strong> for further information on how J Haynes Optician can work with your company,
+                or email us at <a href="mailto:jhaynesoptician@gmail.com">jhaynesoptician@gmail.com</a>.
               </p>
               <div className="text-center mt-4">
                 <Link to="/book-appointment" className="btn btn-primary px-4 py-2 rounded-pill shadow-sm">

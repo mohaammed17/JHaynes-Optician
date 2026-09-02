@@ -272,7 +272,7 @@ const EyeCare = () => {
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <h2 className="text-center mb-4 text-primary">Common Eye Conditions</h2>
-            <div className="py-5 px-3" style={{ backgroundColor: '#f8f9fa', borderRadius: '1rem' }}>
+            <div className="py-5 px-3" style={{ backgroundColor: 'var(--jh-sage-100)', borderRadius: '1rem' }}>
               <div className="row g-4">
                 {eyeConditions.map((condition, index) => (
                   <div data-aos="zoom-in-up" className="col-sm-6 col-md-4 col-lg-3" key={index}>
@@ -280,7 +280,7 @@ const EyeCare = () => {
                       className="card h-100 shadow border-0 rounded-4 transition-hover"
                       initial={{ opacity: 0.8 }}
                       whileHover={hoverEffect}
-                      style={{ backgroundColor: '#fdfdfd' }}
+                      style={{ backgroundColor: 'var(--jh-surface)' }}
                     >
                       <img
                         src={condition.image}

@@ -14,24 +14,23 @@ const PrivacyPolicy = () => {
         </p>
 
         <p className="text-muted" style={{ textAlign: 'justify' }}>
-          For the purposes of the Data Protection Act 1998, the data controller is Glenfield Optician’s Optical Group
-          Limited, registered in England #06670441.
+          The data controller is Zahra Eyecare Ltd, trading as J Haynes Optician.
         </p>
 
         <p className="text-muted" style={{ textAlign: 'justify' }}>
-          <strong>Registered Office:</strong> 93 Dominion Road, Glenfield, Leicestershire, LE3 8FB
+          <strong>Practice address:</strong> 35 High Street, Loughborough, Leicestershire, LE11 2PZ
         </p>
 
         <h5 className="text-info fw-bold">1 - General Provisions</h5>
         <p className="text-muted" style={{ textAlign: 'justify' }}>
-          Glenfield Optician’s Optical Group Limited and its subsidiaries (“Group”) respect the personal privacy of all users of
-          the www.GlenfieldOpticians.co.uk (“Website”) and all customers at our stores. We therefore take all of our obligations
-          for processing personal information very seriously.  Any member of the Glenfield Optician’s Group may use and share, within the Group, the information you provide and other information it holds about you for the purposes set out below.<br></br>This Privacy Policy applies to any use of the Website and to communication you have with a Glenfield Optician’s store or the Glenfield Optician’s Group.
+          Zahra Eyecare Ltd (“we”, “us” or “our”) respects the personal privacy of all users of this website and all customers of
+          J Haynes Optician. We take all of our obligations for processing personal information very seriously. We may use the
+          information you provide and other information we hold about you for the purposes set out below.<br></br>This Privacy Policy applies to any use of this website and to communications you have with J Haynes Optician.
 
         </p>
 
         <h5 className="text-info fw-bold">2 - Supply of Personal Information</h5>
-        <p className="text-muted" style={{ textAlign: 'justify' }}>To process your order we will ask you for personal information at the time you register as a customer (which you are required to provide before you place your first order). We may also collect personal information for Glenfield Optician’s competitions for which entries are accepted online. We may also ask you for your personal information when you request information from us, submit any comments to us or if you report a problem with the Website.</p>
+        <p className="text-muted" style={{ textAlign: 'justify' }}>To process your order we will ask you for personal information at the time you register as a customer (which you are required to provide before you place your first order). We may also collect personal information for J Haynes Optician competitions for which entries are accepted online. We may also ask you for your personal information when you request information from us, submit any comments to us or if you report a problem with the Website.</p>
         <p className="text-muted" style={{ textAlign: 'justify' }}>We may collect and process the following information about you:</p>
         <ul className="text-muted" style={{ textAlign: 'justify' }}>
           <li>Your name</li>
@@ -44,7 +43,7 @@ const PrivacyPolicy = () => {
         </ul>
 
         <h5 className="text-info fw-bold">3 - Our Use of Your Personal Information</h5>
-        <p className="text-muted" style={{ textAlign: 'justify' }}>Your personal information will only be used for the purposes of processing your order, entering a Glenfield Optician’s competition, providing you with information on products or services that you request from us or which we feel may interest you (where you have consented to be contacted for such purposes) or as stated in this Privacy Statement and or at the point of collection of the data.</p>
+        <p className="text-muted" style={{ textAlign: 'justify' }}>Your personal information will only be used for the purposes of processing your order, entering a J Haynes Optician competition, providing you with information on products or services that you request from us or which we feel may interest you (where you have consented to be contacted for such purposes) or as stated in this Privacy Statement and or at the point of collection of the data.</p>
         <p className="text-muted" style={{ textAlign: 'justify' }}>By ordering through the Website you are required to register for online ordering and to accept the Terms and Conditions of Purchase. Please read the Terms and Conditions of Purchase carefully. You expressly consent to the Group:</p>
         <ul className="text-muted" style={{ textAlign: 'justify' }}>
           <li>Processing data relating to your credit/debit card and order details to enable the fulfilment of your order</li>
@@ -54,7 +53,7 @@ const PrivacyPolicy = () => {
           <li>Transferring personal data to offices located in Guernsey and the United Kingdom for the purposes of processing by the Group (Guernsey has Data Protection laws which are largely the same as the UK)</li>
           <li>Using cookies and traffic data as per Clause 4 below</li>
         </ul>
-        <p className="text-muted" style={{ textAlign: 'justify' }}>If you do not register as a customer but wish to email Glenfield Optician’s through the Website (info@glenfieldopticians.co.uk) you will be providing us with personal information about yourself, including your email address, name and contact details. This may include medical information. You may also be required to supply personal information (but not medical information) through the Website for entering a Glenfield Optician’s competition. We will only use such information for the purposes of providing a reply, reviewing any feedback or improving the Website. Such processing may include the purposes set out in Clause 5 (of this Privacy Policy) and transferring the personal information to our offices in Guernsey.</p>
+        <p className="text-muted" style={{ textAlign: 'justify' }}>If you do not register as a customer but wish to email J Haynes Optician through the Website (jhaynesoptician@gmail.com) you will be providing us with personal information about yourself, including your email address, name and contact details. This may include medical information. You may also be required to supply personal information (but not medical information) through the Website for entering a J Haynes Optician competition. We will only use such information for the purposes of providing a reply, reviewing any feedback or improving the Website. Such processing may include the purposes set out in Clause 5 of this Privacy Policy.</p>
         <p className="text-muted" style={{ textAlign: 'justify' }}>If you are simply browsing our Website we will not collect any personal information which will identify you however, we will collect information using cookies and/or traffic data which uses IP addresses or other numeric identifiers which analyse navigation and use of the Website.</p>
         <p className="text-muted" style={{ textAlign: 'justify' }}>
           Personal information collected will be retained by the Group for as long as is reasonably necessary (or as defined under applicable healthcare laws and regulations) to provide products and services (including after sales service) to you
@@ -84,7 +83,7 @@ const PrivacyPolicy = () => {
 
         <h5 className="text-info fw-bold">5 - Cookies and Traffic Data</h5>
         <p className="text-muted" style={{ textAlign: 'justify' }}>
-         Glenfield Optician’s uses cookies in a number of ways to improve the operation of our website and make the use of it much smoother.
+         J Haynes Optician uses cookies in a number of ways to improve the operation of our website and make the use of it much smoother.
         </p>
 
         <h5 className="text-info fw-bold">6 - Disclosure to Third Parties</h5>
@@ -101,15 +100,15 @@ const PrivacyPolicy = () => {
 
         <h5 className="text-info fw-bold">7 - Updating, Accessing or Removing Personal Information</h5>
         <p className="text-muted" style={{ textAlign: 'justify' }}>
-          You can amend or remove your personal details either by signing in to Your Account (if you are a registered online customer) or notifying info@glenfieldopticians.co.uk. You are entitled at law to request us whether we hold any of your personal information and, if so, to request a copy of it. If you wish to exercise your data subject access rights, please contact us with sufficient information to verify your identity and the personal information you require. We reserve the right to charge £50 for complying with a subject access rights and shall provide such information within 40 days of your request.
+          You can amend or remove your personal details either by signing in to Your Account (if you are a registered online customer) or notifying jhaynesoptician@gmail.com. You are entitled at law to request us whether we hold any of your personal information and, if so, to request a copy of it. If you wish to exercise your data subject access rights, please contact us with sufficient information to verify your identity and the personal information you require.
         </p>
 
         <h5 className="text-info fw-bold">8 - Marketing Material</h5>
         <p className="text-muted" style={{ textAlign: 'justify' }}>
-          We may use your personal information to contact you in relation to healthcare related products and services offered by the Group. To ensure you continue to receive excellent healthcare, Glenfield Optician’s will send you non-marketing material such as appointment reminders and notices to remind you of the expiration of your current prescription.
+          We may use your personal information to contact you in relation to healthcare related products and services we offer. To ensure you continue to receive excellent healthcare, J Haynes Optician may send you non-marketing material such as appointment reminders and notices to remind you of the expiration of your current prescription.
         </p>
         <p className="text-muted" style={{ textAlign: 'justify' }}>
-          You can opt out of receiving any email marketing material from the Group by removing your consent at any time either by signing in to Your Account or notifying info@glenfieldopticians.co.uk. Having opted in to receive email marketing material you will always be provided with an opportunity to opt out on each such communication.
+          You can opt out of receiving any email marketing material by removing your consent at any time either by signing in to Your Account or notifying jhaynesoptician@gmail.com. Having opted in to receive email marketing material you will always be provided with an opportunity to opt out on each such communication.
         </p>
 
         <h5 className="text-info fw-bold">9 - Disclaimer</h5>
@@ -126,13 +125,13 @@ const PrivacyPolicy = () => {
 
         <h5 className="text-info fw-bold">Contacting Us</h5>
         <p className="text-muted" style={{ textAlign: 'justify' }}>
-          Please email questions, concerns or comments you have about this Privacy Statement and the way we process personal information to the Group Company Secretary or write to the Registered Office. Alternatively you can contact our customer service at: <br />
-          <strong>Phone:</strong> 0116 2874357 <br />
-          <strong>Email:</strong> info@glenfieldopticians.co.uk
+          Please email questions, concerns or comments you have about this Privacy Statement and the way we process personal information, or contact us at: <br />
+          <strong>Phone:</strong> 01509 260023 <br />
+          <strong>Email:</strong> jhaynesoptician@gmail.com
         </p>
 
         <p className="text-muted mt-3 mb-0">Last updated: 1 June 2025</p>
-        <p className="text-muted mb-0">© Glenfield Eyecare Limited 2012. All rights reserved.</p>
+        <p className="text-muted mb-0">© Zahra Eyecare Ltd. All rights reserved.</p>
       </div>
     </div>
   );

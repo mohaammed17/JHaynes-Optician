@@ -13,11 +13,11 @@ const SafetyGlasses = () => {
                 Eye safety should never be underestimated. From flying debris and dust to chemical splashes and harmful radiation encountered during tasks like welding, the risk of serious eye injuries is very real. These injuries can lead to long-term damage — including partial or complete vision loss — making proper eye protection essential in both professional and domestic settings.
               </p>
               <p className="text-muted" style={{ textAlign: 'justify' }}>
-                At Glenfield Opticians, we provide a comprehensive range of prescription safety glasses designed to protect your eyes without compromising on visual clarity or comfort. Whether you’re undertaking DIY projects at home or working in a high-risk industrial environment, our safety eyewear meets strict industry standards while offering a precise fit tailored to your prescription.
+                At J Haynes Optician, we provide a comprehensive range of prescription safety glasses designed to protect your eyes without compromising on visual clarity or comfort. Whether you’re undertaking DIY projects at home or working in a high-risk industrial environment, our safety eyewear meets strict industry standards while offering a precise fit tailored to your prescription.
               </p>
               <h5 className="text-info fw-bold mt-4 mb-3">Employer Support & Voucher Schemes</h5>
               <p className="text-muted" style={{ textAlign: 'justify' }}>
-                Employers have a legal responsibility to provide appropriate eye protection to staff working in environments where eye hazards are present. Glenfield Opticians is proud to support this commitment by accepting EyeMed eyecare plan vouchers, which are often purchased by employers to supply staff with prescription safety glasses as part of their health and safety protocol.
+                Employers have a legal responsibility to provide appropriate eye protection to staff working in environments where eye hazards are present. J Haynes Optician is proud to support this commitment by accepting EyeMed eyecare plan vouchers, which are often purchased by employers to supply staff with prescription safety glasses as part of their health and safety protocol.
               </p>
               <p className="text-muted" style={{ textAlign: 'justify' }}>
                 Our team will assist in fitting and supplying safety glasses to ensure both comfort and compliance, helping to safeguard vision while supporting workplace wellbeing.

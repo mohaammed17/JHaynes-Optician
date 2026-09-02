@@ -13,17 +13,17 @@ const TermsAndConditions = () => {
               </h2>
               <div className="text-muted" style={{ textAlign: 'justify', whiteSpace: 'pre-line' }}>
                 <p> 
-                  Thank you for visiting our website. Please read these terms and conditions carefully as they set out the terms of use on which you may make use of our website (www.GlenfieldOpticians.co.uk) (“Website”) whether as a guest or registered user. By accessing and/or using our Website, you indicate that you accept these Terms of Use and that you agree to abide by them. If you do not agree to these Terms of Use, please refrain from using our Website.
+                  Thank you for visiting our website. Please read these terms and conditions carefully as they set out the terms of use on which you may make use of this website (“Website”) whether as a guest or registered user. By accessing and/or using our Website, you indicate that you accept these Terms of Use and that you agree to abide by them. If you do not agree to these Terms of Use, please refrain from using our Website.
                 </p>
 
                 <h4 className="text-info fw-bold">Information About Us</h4>
                 <p> 
-                  The Website is operated by Glenfield Eyecare Limited registered in England company registration number #06670441 and its registered office at 93 Dominion Road, Glenfield, Leicestershire, LE3 8FB.
+                  The Website is operated by Zahra Eyecare Ltd, trading as J Haynes Optician.
                 </p>
 
                 <h4 className="text-info fw-bold">1 - General Provisions</h4>
                 <h5 className="text-info fw-bold">1.1</h5 >   <p>These Terms of Use are applicable to any use of the Website.</p>
-                <h5 className="text-info fw-bold">1.2 </h5 >   <p>The services provided under the Website are supplied by Glenfield Opticians Optical Opticians Limited and its subsidiaries, its ultimate holding company and its subsidiaries ("Opticians").</p>
+                <h5 className="text-info fw-bold">1.2 </h5 >   <p>The services provided under the Website are supplied by Zahra Eyecare Ltd, trading as J Haynes Optician ("Opticians").</p>
 
                 <h4 className="text-info fw-bold">2 – Accessing our Website</h4>
                 <h5 className="text-info fw-bold">2.1</h5 >   <p> Access to our Website is permitted on a temporary basis and we reserve the right to withdraw or amend the service we provide on our Website, at any time and for any reason, without notice to you. We will not be liable for any reason if the Website is unavailable at any time or for any period</p>
@@ -43,13 +43,13 @@ const TermsAndConditions = () => {
                 <h4 className="text-info fw-bold">6 - Intellectual Property Rights Policy</h4>
                 <h5 className="text-info fw-bold">6.1 </h5 >   <p>We are the owner or licensee of all intellectual property rights in our Website and in the material published on it. Those works are protected by copyright and trademark laws and treaties around the world. All such rights are reserved.</p>
                 <h5 className="text-info fw-bold">6.2 </h5 >   <p>You may not infringe any of the intellectual property rights associated with the manufacture, design, branding and packaging of any products advertised on the Website nor introduce any modifications to the products supplied by the Opticians unless you have first obtained a licence in writing from us or our licensors.</p>
-                <h5 className="text-info fw-bold">6.3 </h5 >   <p>Use of the Website does not constitute a licence to use in any way, any of the registered or unregistered Trademarks owned by, or licensed to, the Opticians, including but not limited to the words and logos “Glenfield Opticians”, “Glenfield Opticians”, “Transitions”, and any of the brands advertised on the Website.</p>
-                <h5 className="text-info fw-bold">6.4</h5 >   <p>You are permitted to download and print extracts from the Website for your own personal, non-commercial, use. Any other use of the Website including the reproduction, modification, distribution, transmission, republication, display or performance of the content of the Website without prior written consent from Glenfield Opticians Optical Opticians Limited is strictly prohibited</p>
+                <h5 className="text-info fw-bold">6.3 </h5 >   <p>Use of the Website does not constitute a licence to use in any way any registered or unregistered trademarks owned by, or licensed to, the Opticians, including the words and logos “J Haynes Optician”, “Transitions”, and any of the brands advertised on the Website.</p>
+                <h5 className="text-info fw-bold">6.4</h5 >   <p>You are permitted to download and print extracts from the Website for your own personal, non-commercial, use. Any other use of the Website including the reproduction, modification, distribution, transmission, republication, display or performance of the content of the Website without prior written consent from Zahra Eyecare Ltd is strictly prohibited</p>
                 <h5 className="text-info fw-bold">6.5 </h5 >   <p>
-You may not create and/or publish your own database that features substantial parts of the Website without the prior written permission of Glenfield Eyecare Limited</p>
+You may not create and/or publish your own database that features substantial parts of the Website without the prior written permission of Zahra Eyecare Ltd</p>
 
                 <h4 className="text-info fw-bold">7 - Rules for use of content</h4>
-                <h5 className="text-info fw-bold">7.1 </h5 >   <p>You may not in any way commercially exploit any content obtained from the Website without the express written permission of Glenfield Opticians Optical Opticians Limited and must abide by the trademark, copyright and other proprietary restrictions and licenses displayed on the Website.</p>
+                <h5 className="text-info fw-bold">7.1 </h5 >   <p>You may not in any way commercially exploit any content obtained from the Website without the express written permission of Zahra Eyecare Ltd and must abide by the trademark, copyright and other proprietary restrictions and licenses displayed on the Website.</p>
 
                 <h4 className="text-info fw-bold">8 – Viruses, hacking and other offences</h4>
                 <h5 className="text-info fw-bold">8.1</h5 >   <p>You must not misuse our Website by knowingly introducing viruses, Trojans, worms, logic bombs, corrupted data or other material which is malicious or technologically harmful. You must not attempt to gain unauthorized access to our Website, the server on which our Website is stored or any server, computer or database connected to our Website. You must not attack our Website via a denial-of-service attack or a distributed denial-of-service attack.</p>
@@ -76,7 +76,7 @@ You may not create and/or publish your own database that features substantial pa
                 <h5 className="text-info fw-bold">13.1 </h5 >   <p>You agree that the Website, including the content, is provided free of charge. The Opticians will not be liable to you or any person for any loss or damage of any kind which may arise from the unauthorised use of the Website and the use of any information contained within it</p>
                 <h5 className="text-info fw-bold">13.2</h5 >   <p> The Website is intended for use within the United Kingdom. The Opticians make no representation that any product referred to on the Website is appropriate for use, or available, outside the United Kingdom. Those who choose to access this site outside of the United Kingdom are responsible for compliance with local laws to the extent that local laws are applicable.</p>
                 <h5 className="text-info fw-bold">13.3</h5 >   <p>By using this Website, you consent to these Terms of Use and disclaimers, as defined by the Opticians. The Opticians reserves the right to change these Terms of Use and disclaimers and will publish a notice on the Website when that occurs.</p>
-                <h5 className="text-info fw-bold">13.4</h5 >   <p>The Opticians does not limit or restrict its liability for fraudulent misrepresentation or death or personal injury should it arise from the negligence of Glenfield Opticiansit, its directors, employees, affiliates, or other representatives or for any liability that cannot by law be excluded.</p>
+                <h5 className="text-info fw-bold">13.4</h5 >   <p>The Opticians does not limit or restrict its liability for fraudulent misrepresentation or death or personal injury should it arise from the negligence of J Haynes Optician, its directors, employees, affiliates, or other representatives or for any liability that cannot by law be excluded.</p>
                 <h5 className="text-info fw-bold">13.5</h5 >   <p> The Opticians will use their reasonable endeavours to ensure that the Website is fully operational. Due to the nature of the Internet, the Opticians cannot guarantee that the Website will be free from delays, interruptions or errors.</p>
 
                 <h4 className="text-info fw-bold">14 - Waiver</h4>
@@ -91,11 +91,11 @@ You may not create and/or publish your own database that features substantial pa
 
                 <h4 className="text-info fw-bold">Contacting us</h4>
                 <p> If you have any concerns about material which appears on our Website, please contact</p>
-                <p> Glenfield Opticians Customer Service</p>
-                <p> T: 0116 2874357</p>
-                <p> E: info@Glenfieldopticians.co.uk</p>
+                <p> J Haynes Optician Customer Service</p>
+                <p> T: 01509 260023</p>
+                <p> E: jhaynesoptician@gmail.com</p>
 
-                <p className="mt-3"><small>Last updated 1/06/2025<br />© Copyright Glenfield Eyecare Limited 2012. All rights reserved.</small></p>
+                <p className="mt-3"><small>Last updated 1/06/2025<br />© Copyright Zahra Eyecare Ltd. All rights reserved.</small></p>
               </div>
             </div>
           </div>

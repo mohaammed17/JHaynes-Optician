@@ -12,7 +12,7 @@ const HearingTest = () => {
           <strong>Check Your Hearing Today – Expert Care You Can Trust</strong>
         </h5>
         <p className="text-muted">
-          Hearing loss can leave individuals feeling disconnected from the world around them, negatively affecting communication, confidence, and overall quality of life. At Glenfield Opticians, we are dedicated to offering professional hearing care services designed to support your well-being.
+          Hearing loss can leave individuals feeling disconnected from the world around them, negatively affecting communication, confidence, and overall quality of life. At J Haynes Optician, we are dedicated to offering professional hearing care services designed to support your well-being.
         </p>
         <p className="text-muted">
           Our dedicated hearing care services include:

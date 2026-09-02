@@ -14,7 +14,7 @@
   transition: color 0.3s ease, transform 0.3s ease;
 }
 .nav-link:hover {
-  color: #007bff;
+  color: var(--jh-teal-700);
   transform: translateY(-2px);
 }
 
@@ -47,12 +47,12 @@
 
 .nav-link {
   font-weight: 500;
-  color: #333 !important;
+  color: var(--jh-ink) !important;
   transition: color 0.2s ease-in-out;
 }
 .nav-link:hover,
 .nav-link.active {
-  color: #0d6efd !important;
+  color: var(--jh-teal-700) !important;
 }
 
 .dropdown-menu {
@@ -66,8 +66,8 @@
   transition: background-color 0.2s ease-in-out;
 }
 .dropdown-item:hover {
-  background-color: #f8f9fa;
-  color: #0d6efd;
+  background-color: var(--jh-sage-100);
+  color: var(--jh-teal-700);
 }
 
 /* On mobile screens, increase the logo size */
@@ -82,12 +82,12 @@
 .navbar-nav .nav-link {
   position: relative;
   font-weight: 500;
-  color: #333;
+  color: var(--jh-ink);
   transition: color 0.3s ease, transform 0.3s ease;
 }
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: #0d6efd;
+  color: var(--jh-teal-700);
 }
 .navbar-nav .nav-link::after {
   content: '';
@@ -117,8 +117,8 @@
 
 /* FOOTER */
 .footer-bg {
-  background-color: #000000;
-  color: #000000;
+  background-color: var(--jh-teal-950);
+  color: #ffffff;
   padding: 3rem 0;
 }
 
@@ -129,10 +129,7 @@
 }
 
 .social-icons a:hover {
-  color: #0dcaf0; /* Bootstrap info color on hover */
-}
-.social-icons a:hover {
-  color: #0d6efd; /* Bootstrap primary blue */
+  color: var(--jh-copper-soft);
   transition: color 0.3s;
 }
 
@@ -220,19 +217,19 @@ section h2 {
 
 /* About Section */
 .about-section {
-  background-color: #f8f9fa;
+  background-color: var(--jh-sage-100);
 }
 .about-section p {
   max-width: 750px;
   margin: auto;
-  color: #333;
+  color: var(--jh-ink);
   font-size: 1.1rem;
 }
 
 /* Services Section */
 .services-section .col-md-4 {
   padding: 2rem 1rem;
-  background: #ffffff;
+  background: var(--jh-surface);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
@@ -241,7 +238,7 @@ section h2 {
   transform: translateY(-5px);
 }
 .services-section i {
-  color: #0d6efd;
+  color: var(--jh-copper);
   margin-bottom: 1rem;
 }
 .services-section h5 {
@@ -261,7 +258,7 @@ section h2 {
   color: white;
 }
 .cta-section h2 {
-  color:#0d6efd;
+  color: var(--jh-teal-700);
 }
 .cta-section p {
   font-size: 1.1rem;
@@ -269,14 +266,14 @@ section h2 {
 
 /* Testimonials Section */
 .testimonials-section blockquote {
-  background: #ffffff;
+  background: var(--jh-surface);
   padding: 1.5rem;
-  border-left: 5px solid #0d6efd;
+  border-left: 5px solid var(--jh-copper);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
 }
 .testimonials-section footer {
-  color: #555;
+  color: var(--jh-muted);
   margin-top: 0.5rem;
   font-size: 0.95rem;
 }
@@ -297,14 +294,14 @@ section h2 {
 }
 
 .header {
-  background-color: #4CAF50;
+  background-color: var(--jh-teal-700);
   color: white;
   padding: 20px;
   text-align: center;
 }
 
 .appointment-button {
-  background-color: #f44336;
+  background-color: var(--jh-copper);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -313,7 +310,7 @@ section h2 {
 }
 
 .appointment-button:hover {
-  background-color: #d32f2f;
+  background-color: var(--jh-copper-dark);
 }
 
 .opening-times, .contact-info {
@@ -323,7 +320,7 @@ section h2 {
 .footer {
   text-align: center;
   font-size: 0.8em;
-  color: #777;
+  color: var(--jh-muted);
   margin-top: 40px;
 }
 
@@ -354,7 +351,7 @@ section h2 {
 }
 
 .custom-modal {
-  background: white;
+  background: var(--jh-surface);
   border-radius: 1rem;
   max-width: 500px;
   width: 90%;
@@ -367,7 +364,7 @@ section h2 {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.25rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid var(--jh-border);
 }
 
 .modal-body {
@@ -398,12 +395,12 @@ section h2 {
   height: 40px;
   border-radius: 50%;
   border: 5px solid transparent;
-  border-top-color: #0d6efd;
+  border-top-color: var(--jh-teal-700);
   animation: spin 1s linear infinite;
 }
 
 .circle2 {
-  border-top-color: orange;
+  border-top-color: var(--jh-copper);
   animation-delay: 0.3s;
 }
 
@@ -426,7 +423,7 @@ section h2 {
 
 /* CSS for hover animation on timeline content */
 .timeline-content {
-  background-color: #f8f9fa;
+  background-color: var(--jh-sage-50);
   padding: 10px 15px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
