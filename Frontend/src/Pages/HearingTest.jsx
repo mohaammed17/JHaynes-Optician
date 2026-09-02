@@ -31,9 +31,9 @@ const HearingTest = () => {
           Take the first step toward better hearing — book your hearing test with us today.
         </p>
         <div className="text-center mt-4">
-          <a href="/book-appointment" className="btn btn-primary px-4">
+          <Link to="/book-appointment" className="btn btn-primary px-4">
             Book Appointment
-          </a>
+          </Link>
         </div>
       </div>
     </div>

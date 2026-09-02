@@ -1,26 +1,39 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import logo from '../assets/logo.bmp';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Collapse from 'bootstrap/js/dist/collapse';
+import 'bootstrap/js/dist/dropdown';
+import logo from '../assets/logo.webp';
 import '../App.css';
 
 function Navbar() {
   const [top, setTop] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   const collapseRef = useRef(null);
 
   useEffect(() => {
-    const scrollHandler = () => setTop(window.pageYOffset <= 5);
-    window.addEventListener('scroll', scrollHandler);
+    let frameRequested = false;
+    const scrollHandler = () => {
+      if (frameRequested) return;
+
+      frameRequested = true;
+      window.requestAnimationFrame(() => {
+        const nextTop = window.pageYOffset <= 5;
+        setTop((currentTop) => currentTop === nextTop ? currentTop : nextTop);
+        frameRequested = false;
+      });
+    };
+
+    window.addEventListener('scroll', scrollHandler, { passive: true });
     return () => window.removeEventListener('scroll', scrollHandler);
   }, []);
 
   const handleNavLinkClick = () => {
     if (collapseRef.current && collapseRef.current.classList.contains("show")) {
-      const bsCollapse = window.bootstrap.Collapse.getInstance(collapseRef.current);
+      const bsCollapse = Collapse.getInstance(collapseRef.current);
       if (bsCollapse) {
         bsCollapse.hide();
+        setMenuOpen(false);
       }
     }
   };
@@ -40,6 +53,9 @@ function Navbar() {
               src={logo}
               alt="logo"
               className="logo-img me-2 rounded shadow-sm"
+              width="602"
+              height="142"
+              decoding="async"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 1.1, rotate: 0 }}  // Ensures no tilt when tapped
               transition={{ type: 'spring', stiffness: 300 }}
@@ -52,15 +68,17 @@ function Navbar() {
             type="button"
             // Remove data-bs-* attributes to avoid automatic handling
             aria-controls="navbarContent"
-            aria-expanded="false"
+            aria-expanded={menuOpen}
             aria-label="Toggle navigation"
             onClick={() => {
               if (collapseRef.current) {
-                const bsCollapse = window.bootstrap.Collapse.getInstance(collapseRef.current);
-                if (bsCollapse) {
-                  bsCollapse.toggle();
+                const bsCollapse = Collapse.getOrCreateInstance(collapseRef.current, { toggle: false });
+                if (collapseRef.current.classList.contains('show')) {
+                  bsCollapse.hide();
+                  setMenuOpen(false);
                 } else {
-                  new window.bootstrap.Collapse(collapseRef.current, { toggle: true });
+                  bsCollapse.show();
+                  setMenuOpen(true);
                 }
               }
             }}

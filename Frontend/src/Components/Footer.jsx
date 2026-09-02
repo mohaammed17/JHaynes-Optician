@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import 'bootstrap-icons/font/bootstrap-icons.min.css';
 import '../App.css';
-import annexsysLogo from '../assets/Annexsyslogo.png';
+import annexsysLogo from '../assets/Annexsyslogo.webp';
 
 export default function Footer() {
   return (
@@ -20,6 +19,7 @@ export default function Footer() {
             className="col-md-6 mb-3"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6 }}
           >
             <h5>J Haynes Optician</h5>
@@ -68,6 +68,7 @@ export default function Footer() {
             className="col-md-6 mb-3"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h5>Quick Links</h5>
@@ -104,6 +105,7 @@ export default function Footer() {
           className="row align-items-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="col-md-6 text-start">
@@ -119,7 +121,15 @@ export default function Footer() {
               whileHover={{ scale: 1.05 }}
               style={{ cursor: 'pointer' }}
             >
-              <img src={annexsysLogo} alt="AnnexSys Logo" style={{ maxHeight: '80px' }} />
+              <img
+                src={annexsysLogo}
+                alt="AnnexSys Logo"
+                width="320"
+                height="342"
+                loading="lazy"
+                decoding="async"
+                style={{ maxHeight: '80px', width: 'auto' }}
+              />
             </motion.a>
           </div>
         </motion.div>

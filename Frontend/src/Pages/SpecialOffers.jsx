@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const SpecialOffers = () => {
   useEffect(() => {
@@ -54,9 +55,9 @@ const SpecialOffers = () => {
                 </div>
 
                 <div className="text-center mt-4">
-                  <a href="/book-appointment" className="btn btn-primary px-4">
+                  <Link to="/book-appointment" className="btn btn-primary px-4">
                     Book Appointment
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 /* Main APP */
 .main-content {
-  padding-top: 60px; /* reduced to match slimmer navbar */
+  padding-top: 69px;
   flex: 1;
 }
 .app-wrapper {
@@ -72,6 +72,10 @@
 
 /* On mobile screens, increase the logo size */
 @media (max-width: 576px) {
+  .main-content {
+    padding-top: 77px;
+  }
+
   .logo-img {
     height: 56px;
     max-width: 180px;
@@ -105,10 +109,12 @@
 }
 
 /* === Dropdown Auto Open on Hover === */
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0; /* Prevent jump */
-  animation: fadeIn 0.3s ease-in-out;
+@media (hover: hover) and (pointer: fine) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    animation: fadeIn 0.3s ease-in-out;
+  }
 }
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }

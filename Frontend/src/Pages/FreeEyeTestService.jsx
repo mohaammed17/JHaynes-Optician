@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import eyeExamImage from '../assets/eyeexam.png';
+import { Link } from 'react-router-dom';
+import eyeExamImage from '../assets/eyeexam.webp';
 
 const FreeEyeTestService = () => {
   useEffect(() => {
@@ -121,6 +122,8 @@ const FreeEyeTestService = () => {
                   src={eyeExamImage}
                   alt="The key to good vision is having regular eye examinations"
                   className="img-fluid rounded"
+                  loading="lazy"
+                  decoding="async"
                   style={{ maxWidth: '60%', objectFit: 'cover' }} // decreased size here
                 />
               </div>
@@ -178,9 +181,9 @@ const FreeEyeTestService = () => {
         {/* Unified Book Appointment Button */}
         <div className="row" data-aos="zoom-in">
           <div className="col-lg-10 mx-auto text-center">
-            <a href="/book-appointment" className="btn btn-primary px-4">
+            <Link to="/book-appointment" className="btn btn-primary px-4">
               Book Appointment
-            </a>
+            </Link>
           </div>
         </div>
       </div>

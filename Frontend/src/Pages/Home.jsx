@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Carousel from 'bootstrap/js/dist/carousel';
 import Testimonials from '../Components/Testimonials';
 import { Link } from 'react-router-dom';
 
-import slide1 from '../assets/slide1.png';
-import homevisitng from '../assets/homevisitng.png';
-import slide3 from '../assets/slide3.jpg';
-import brandGraphic from '../assets/mustafa-eye.jpeg';
-import blueBlock from '../assets/bluelock.jpeg';  // Blue Block main image
-import photofun from '../assets/photofun.jpeg';     // Second image for Blue Block slide
-import safetywear from '../assets/safetywear.png'; // New Safety Eyewear image
-import audiologist from '../assets/audiologist.jpg';
+import slide1 from '../assets/slide1.webp';
+import homevisitng from '../assets/homevisitng.webp';
+import slide3 from '../assets/slide3.webp';
+import brandGraphic from '../assets/mustafa-eye.webp';
+import blueBlock from '../assets/bluelock.webp';
+import photofun from '../assets/photofun.webp';
+import safetywear from '../assets/safetywear.webp';
+import audiologist from '../assets/audiologist.webp';
 
 const Home = () => {
   useEffect(() => {
@@ -21,16 +21,18 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    setTimeout(() => {
+    const setupTimer = window.setTimeout(() => {
       const carouselElement = document.getElementById('carouselExampleIndicators');
-      if (carouselElement && window.bootstrap) {
-        new window.bootstrap.Carousel(carouselElement, {
+      if (carouselElement) {
+        Carousel.getOrCreateInstance(carouselElement, {
           interval: 5000,
           ride: 'carousel',
           pause: 'hover'
         });
       }
-    }, 100); // adjust the delay as needed
+    }, 100);
+
+    return () => window.clearTimeout(setupTimer);
   }, []);
 
   const slides = [
@@ -114,31 +116,27 @@ const Home = () => {
 
           <div className="carousel-inner">
             {slides.map((slide, index) => {
-              // For the Blue Block slide with two images, keep as is.
               if (slide.image === blueBlock) {
                 return (
                   <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
-                    <div
-                      data-aos="fade-up"
-                      data-aos-anchor-placement="top-bottom"
-                      className="carousel-slide-wrapper"
-                      style={{ height: '500px', backgroundColor: '#000' }}
-                    >
+                    <div className="carousel-slide-wrapper carousel-dual-slide">
                       <div className="carousel-overlay" />
                       <div className="d-flex justify-content-center align-items-center h-100">
-                        <div style={{ display: 'flex', width: '100%', height: '100%' }}>
+                        <div className="carousel-dual-images" aria-hidden="true">
                           <img
                             src={blueBlock}
-                            alt="Blue Block Lenses Advertisement"
-                            style={{ width: '50%', height: '500px', objectFit: 'contain' }}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
                           />
                           <img
                             src={photofun}
-                            alt="PhotoFun UV3G Hyper Protective Lens Advertisement"
-                            style={{ width: '50%', height: '500px', objectFit: 'contain' }}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
                           />
                         </div>
-                        <div className="carousel-content text-center position-absolute w-100" style={{ top: '50%', transform: 'translateY(-50%)' }}>
+                        <div className="carousel-content text-center position-absolute w-100">
                           <h1 className="text-white fw-bold">Advanced Lens Solutions</h1>
                           <p className="text-light fs-5">
                             Dual protection for modern lifestyles.<br />
@@ -153,30 +151,28 @@ const Home = () => {
                   </div>
                 );
               } else {
-                // Default slide layout for non-blueBlock slides - change backgroundSize to cover for the Safety Eyewear slide as well.
-                const slideStyle = {
-                  backgroundImage: `url(${slide.image})`,
-                  backgroundSize: 'cover',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'center',
-                  height: '500px'
-                };
                 return (
                   <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
-                    <div
-                      data-aos="fade-up"
-                      data-aos-anchor-placement="top-bottom"
-                      className="carousel-slide-wrapper"
-                      style={slideStyle}
-                    >
+                    <div className="carousel-slide-wrapper">
+                      <img
+                        className="carousel-bg-image"
+                        src={slide.image}
+                        alt=""
+                        aria-hidden="true"
+                        loading={index === 0 ? 'eager' : 'lazy'}
+                        fetchPriority={index === 0 ? 'high' : 'low'}
+                        decoding={index === 0 ? 'sync' : 'async'}
+                      />
                       <div className="carousel-overlay" />
                       <div className="d-flex justify-content-center align-items-center h-100">
                         <div className="carousel-content text-center">
                           <h1 className="text-white fw-bold">{slide.title}</h1>
                           <p className="text-light fs-5" dangerouslySetInnerHTML={{ __html: slide.subtitle }} />
-                          <a href={slide.path} className="btn btn-primary mt-3">
-                            {slide.button}
-                          </a>
+                          {slide.path.startsWith('#') ? (
+                            <a href={slide.path} className="btn btn-primary mt-3">{slide.button}</a>
+                          ) : (
+                            <Link to={slide.path} className="btn btn-primary mt-3">{slide.button}</Link>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -314,7 +310,7 @@ const Home = () => {
               <Link to="/cataract-and-other-referrals" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="card h-100 shadow-sm bg-white service-item">
                   <div className="card-body text-center">
-                    <i className="fa fa-hospital-o fs-1 text-primary"></i>
+                    <i className="bi bi-hospital fs-1 text-primary"></i>
                     <h5 className="card-title mt-3">Cataract & Other Referrals</h5>
                     <p className="card-text">Direct referrals to hospital without GP involvement.</p>
                   </div>
@@ -444,9 +440,9 @@ const Home = () => {
             <iframe
               src="https://www.google.com/maps?q=J%20Haynes%20Optician%2C%2035%20High%20Street%2C%20Loughborough%2C%20LE11%202PZ&output=embed"
               height="300"
-              style={{ width: "100%" }}
+              style={{ width: "100%", border: 0 }}
               allowFullScreen=""
-              loading="lazy"
+              loading="eager"
               referrerPolicy="no-referrer-when-downgrade"
               title="J Haynes Optician location"
             ></iframe>

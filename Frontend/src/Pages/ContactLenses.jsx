@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import lensesImage from '../assets/lenses.png'; // Import the image
+import { Link } from 'react-router-dom';
+import lensesImage from '../assets/lenses.webp';
 
 const ContactLenses = () => {
   useEffect(() => {
@@ -56,9 +57,9 @@ const ContactLenses = () => {
                 </p>
 
                 <div className="text-center mt-4">
-                  <a href="/book-appointment" className="btn btn-primary px-4">
+                  <Link to="/book-appointment" className="btn btn-primary px-4">
                     Book Appointment
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

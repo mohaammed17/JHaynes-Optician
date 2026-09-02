@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import slide2 from '../assets/slide2.png';
-import img1 from '../assets/img1.jpg'; // background image for Glasses & Lenses
-import mustafaKid from '../assets/mustafa-kid.jpeg'; // new promotional image
+import { Link } from 'react-router-dom';
+import slide2 from '../assets/slide2.webp';
+import img1 from '../assets/img1.webp';
+import mustafaKid from '../assets/mustafa-kid.webp';
 
 const ChildrenZone = () => {
   useEffect(() => {
@@ -84,9 +85,9 @@ const ChildrenZone = () => {
                   We also offer sports glasses and contact lenses for children.
                 </p>
                 <div className="text-center mt-3">
-                  <a href="/book-appointment" className="btn btn-primary px-4">
+                  <Link to="/book-appointment" className="btn btn-primary px-4">
                     Book Appointment
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -110,6 +111,8 @@ const ChildrenZone = () => {
                 src={mustafaKid} 
                 alt="Child with eyeglasses" 
                 className="img-fluid rounded" 
+                loading="lazy"
+                decoding="async"
                 style={{ maxHeight: '350px', objectFit: 'cover' }}
               />
             </div>

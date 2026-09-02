@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import dispensingJourney from '../assets/dispensingjounrey.png';
+import { Link } from 'react-router-dom';
+import dispensingJourney from '../assets/dispensingjounrey.webp';
 
 const DispensingOfEyeglasses = () => {
   useEffect(() => {
@@ -43,9 +44,9 @@ const DispensingOfEyeglasses = () => {
                     We ensure every patient leaves with glasses that not only suit their prescription but also enhance their style and confidence. Experience our professional dispensing service today.
                   </p>
                   <div className="text-center mt-4">
-                    <a href="/book-appointment" className="btn btn-primary px-4">
+                    <Link to="/book-appointment" className="btn btn-primary px-4">
                       Book Your Appointment
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -56,6 +57,7 @@ const DispensingOfEyeglasses = () => {
                   alt="Spectacles Dispensing Journey" 
                   className="img-fluid rounded shadow"
                   loading="lazy"
+                  decoding="async"
                   style={{ 
                     maxHeight: '500px', 
                     objectFit: 'cover',

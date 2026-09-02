@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Modal, Button } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -9,18 +8,18 @@ import { motion } from 'framer-motion';
 import CataractImg from '../assets/Cataract.png';
 import GlaucomaImg from '../assets/Glaucoma.png';
 import EyeImg from '../assets/Eye.png';
-import flashes from '../assets/Flashes.png';
-import macular from '../assets/macular.png';
-import diabetic from '../assets/diabetic.png';
+import flashes from '../assets/Flashes.webp';
+import macular from '../assets/macular.webp';
+import diabetic from '../assets/diabetic.webp';
 import BlepharitisImg from '../assets/Bilaphitris.png';
 import ConjunctivitisImg from '../assets/Conjuctivis.png';
 
 // Import images for refractive errors
-import HypermetropiaImg from '../assets/Hypermetropia.png';
-import MyopiaImg from '../assets/Myopia.png';
-import AstigmatismImg from '../assets/Astigmatism.png';
-import PresbyopiaImg from '../assets/Presbyopia.png';
-import AnisometropiaImg from '../assets/Anisometropia.png';
+import HypermetropiaImg from '../assets/Hypermetropia.webp';
+import MyopiaImg from '../assets/Myopia.webp';
+import AstigmatismImg from '../assets/Astigmatism.webp';
+import PresbyopiaImg from '../assets/Presbyopia.webp';
+import AnisometropiaImg from '../assets/Anisometropia.webp';
 
 const errorImages = {
   Hypermetropia: HypermetropiaImg,
@@ -224,6 +223,8 @@ const EyeCare = () => {
                       src={getErrorBgImage(item.title)}
                       alt={item.title}
                       className="w-100"
+                      loading="lazy"
+                      decoding="async"
                       style={{ height: '220px', objectFit: 'cover' }}
                     />
                     <div className="p-3 d-flex flex-column">
@@ -253,6 +254,8 @@ const EyeCare = () => {
                       src={getErrorBgImage(item.title)}
                       alt={item.title}
                       className="w-100"
+                      loading="lazy"
+                      decoding="async"
                       style={{ height: '220px', objectFit: 'cover' }}
                     />
                     <div className="p-3 d-flex flex-column">
@@ -286,6 +289,8 @@ const EyeCare = () => {
                         src={condition.image}
                         alt={condition.title}
                         className="card-img-top rounded-top-4"
+                        loading="lazy"
+                        decoding="async"
                         style={{ height: '140px', objectFit: 'cover' }}
                       />
                       <div className="card-body d-flex flex-column">

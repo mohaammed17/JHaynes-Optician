@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import contactLensMap from '../assets/contactlens.png';
+import contactLensMap from '../assets/contactlens.webp';
 
 const ContactLensConsultation = () => {
   useEffect(() => {
@@ -49,6 +49,7 @@ const ContactLensConsultation = () => {
                     alt="Contact lens consultation steps" 
                     className="img-fluid rounded shadow"
                     loading="lazy"
+                    decoding="async"
                     style={{ 
                       maxHeight: '500px', 
                       objectFit: 'cover',
