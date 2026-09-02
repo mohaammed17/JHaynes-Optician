@@ -428,7 +428,8 @@ const Home = () => {
       <section className="testimonials-section py-5">
         <div className="container">
           <div data-aos="fade-up" className="text-center mb-4">
-            <h2 className="text-primary fw-bold">Testimonials</h2>
+            <h2 className="text-primary fw-bold">Google Reviews</h2>
+            <p className="text-muted mb-0">Selected summaries from five-star customer reviews</p>
           </div>
           <Testimonials />
         </div>
