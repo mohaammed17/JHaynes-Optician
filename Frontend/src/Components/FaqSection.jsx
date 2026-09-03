@@ -50,6 +50,16 @@ const faqItems = [
     ),
   },
   {
+    question: 'Can you fit new lenses into my existing spectacle frames?',
+    answer:
+      'Yes. If your existing frames are in good condition and suitable for your chosen lens type, we may be able to glaze new lenses into them. We will inspect the frames first and advise you on their suitability.',
+  },
+  {
+    question: 'How long does an eye examination take?',
+    answer:
+      'A standard eye examination usually takes between 30 and 40 minutes. Additional assessments, such as an OCT scan, may require a further 10 to 15 minutes.',
+  },
+  {
     question: 'When is the practice open?',
     answer: 'We are open Tuesday morning and Wednesday to Friday during the day. Monday and Saturday visits are by appointment only, and we are closed on Sundays and bank holidays.',
   },
