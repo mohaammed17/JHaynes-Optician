@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://frontend-psi-ten-66.vercel.app/sitemap.xml
+Sitemap: https://jhaynesoptician.com/sitemap.xml

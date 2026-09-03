@@ -17,14 +17,24 @@ APPOINTMENT_EMAIL = os.getenv("APPOINTMENT_EMAIL", "jhaynesoptician@gmail.com")
 SENDER_EMAIL = os.getenv("SENDER_EMAIL") or "postmaster@jhaynesoptician.com"
 PORT = int(os.getenv("PORT", "5000"))
 API_KEY = os.getenv("SENDINBLUE_API_KEY")
-ALLOWED_ORIGINS = [
+DEFAULT_ORIGINS = {
+    "https://jhaynesoptician.com",
+    "https://www.jhaynesoptician.com",
+    "https://frontend-psi-ten-66.vercel.app",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:5174",
+    "http://127.0.0.1:5174",
+}
+CONFIGURED_ORIGINS = {
     origin.strip()
     for origin in os.getenv(
         "FRONTEND_ORIGINS",
-        "https://frontend-psi-ten-66.vercel.app,http://localhost:5173,http://127.0.0.1:5173",
+        "",
     ).split(",")
     if origin.strip()
-]
+}
+ALLOWED_ORIGINS = sorted(DEFAULT_ORIGINS | CONFIGURED_ORIGINS)
 
 app = Flask(__name__, static_url_path="/backend/static")
 app.config["APPLICATION_ROOT"] = "/backend"

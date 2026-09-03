@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const SITE_URL = 'https://frontend-psi-ten-66.vercel.app';
+const SITE_URL = 'https://jhaynesoptician.com';
+const SOCIAL_IMAGE_URL = `${SITE_URL}/og-image.png`;
 const DEFAULT_DESCRIPTION = 'Independent opticians in Loughborough offering professional, personal eye care, contact lenses, spectacles and specialist services.';
 
 const routeSeo = {
@@ -22,6 +23,7 @@ const routeSeo = {
   '/glazing-of-spectacles': ['Spectacle Reglazing | J Haynes Optician', 'Have new prescription lenses fitted into your existing spectacle frames.'],
   '/optical-coherence-tomography': ['OCT Eye Scans | J Haynes Optician', 'Advanced OCT retinal imaging for detailed eye health assessment and early detection.'],
   '/book-appointment': ['Request an Appointment | J Haynes Optician', 'Request an eye care appointment with J Haynes Optician in Loughborough.'],
+  '/contact': ['Contact J Haynes Optician | Loughborough', 'Call, email or visit J Haynes Optician at 35 High Street, Loughborough. Find opening times, directions and appointment information.'],
   '/privacy-policy': ['Privacy Policy | J Haynes Optician', 'Read the J Haynes Optician privacy policy and how personal information is handled.'],
   '/freedom-of-information': ['Freedom of Information | J Haynes Optician', 'Freedom of Information publication details for J Haynes Optician.'],
   '/terms-and-conditions': ['Terms and Conditions | J Haynes Optician', 'Read the website terms and conditions for J Haynes Optician.'],
@@ -51,6 +53,12 @@ export default function Seo() {
     setMeta('meta[property="og:title"]', ['property', 'og:title'], title);
     setMeta('meta[property="og:description"]', ['property', 'og:description'], description);
     setMeta('meta[property="og:url"]', ['property', 'og:url'], pageUrl);
+    setMeta('meta[property="og:image"]', ['property', 'og:image'], SOCIAL_IMAGE_URL);
+    setMeta('meta[property="og:image:alt"]', ['property', 'og:image:alt'], 'J Haynes Optician, independent opticians in Loughborough');
+    setMeta('meta[name="twitter:card"]', ['name', 'twitter:card'], 'summary_large_image');
+    setMeta('meta[name="twitter:title"]', ['name', 'twitter:title'], title);
+    setMeta('meta[name="twitter:description"]', ['name', 'twitter:description'], description);
+    setMeta('meta[name="twitter:image"]', ['name', 'twitter:image'], SOCIAL_IMAGE_URL);
     setMeta('meta[name="robots"]', ['name', 'robots'], isKnownPage ? 'index,follow' : 'noindex,nofollow');
 
     let canonical = document.head.querySelector('link[rel="canonical"]');

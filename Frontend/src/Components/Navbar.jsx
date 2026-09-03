@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import Collapse from 'bootstrap/js/dist/collapse';
 import 'bootstrap/js/dist/dropdown';
 import logo from '../assets/j-haynes-logo.webp';
-import '../App.css';
 
 function Navbar() {
   const [top, setTop] = useState(true);
@@ -39,26 +37,18 @@ function Navbar() {
   };
 
   return (
-    <motion.header
-      className={`main-navbar fixed-top ${top ? '' : 'scrolled'}`}
-      initial={{ y: -80, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <header className={`main-navbar fixed-top navbar-enter ${top ? '' : 'scrolled'}`}>
     <nav className="site-navbar navbar navbar-expand-lg py-2">
         <div className="container-fluid px-4">
           {/* Brand/Logo */}
           <Link to="/" className="navbar-brand d-flex align-items-center">
-            <motion.img
+            <img
               src={logo}
               alt="J Haynes Optician"
               className="logo-img me-2 rounded shadow-sm"
               width="900"
               height="145"
               decoding="async"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 1.1, rotate: 0 }}  // Ensures no tilt when tapped
-              transition={{ type: 'spring', stiffness: 300 }}
             />
           </Link>
 
@@ -94,24 +84,25 @@ function Navbar() {
                 { label: 'Eye Care', to: '/eyecare' },
                 { label: 'Contact Lenses', to: '/contactlenses' },
                 { label: 'Special Offers', to: '/specialoffers' },
-                { label: 'Children Zone', to: '/childrenzone' }
-              ].map((link, i) => (
-                <motion.li className="nav-item" key={i} whileHover={{ scale: 1.1 }}>
+                { label: 'Children Zone', to: '/childrenzone' },
+                { label: 'Contact', to: '/contact' }
+              ].map((link) => (
+                <li className="nav-item" key={link.to}>
                   <NavLink to={link.to} className="nav-link" onClick={handleNavLinkClick}>
                     {link.label}
                   </NavLink>
-                </motion.li>
+                </li>
               ))}
 
               <li className="nav-item dropdown">
-                <motion.a
-                  className="nav-link d-flex align-items-center gap-1"
-                  href="#"
+                <button
+                  className="nav-link nav-dropdown-toggle d-flex align-items-center gap-1"
+                  type="button"
                   data-bs-toggle="dropdown"
-                  whileHover={{ scale: 1.05 }}
+                  aria-haspopup="true"
                 >
-                  Services <i className="bi bi-caret-down-fill"></i>
-                </motion.a>
+                  Services <i className="bi bi-caret-down-fill" aria-hidden="true"></i>
+                </button>
                 <ul className="dropdown-menu">
                   <li>
                     <NavLink to="/freeeyetest" className="dropdown-item" onClick={handleNavLinkClick}>
@@ -173,15 +164,15 @@ function Navbar() {
             </ul>
 
             {/* Book Button */}
-            <motion.div className="d-flex justify-content-lg-end justify-content-center" whileHover={{ scale: 1.05 }}>
+            <div className="d-flex justify-content-lg-end justify-content-center">
               <NavLink to="/book-appointment" className="btn btn-primary px-3 py-2 rounded-pill border-0 shadow-sm" onClick={handleNavLinkClick}>
-                Book an Appointment 
+                Book an Appointment
               </NavLink>
-            </motion.div>
+            </div>
           </div>
         </div>
       </nav>
-    </motion.header>
+    </header>
   );
 }
 

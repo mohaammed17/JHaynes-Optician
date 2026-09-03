@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'animate.css';
 
@@ -37,6 +37,53 @@ const BookAppointment = () => {
   const [modalMessage, setModalMessage] = useState('');
   const [submissionSucceeded, setSubmissionSucceeded] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const modalRef = useRef(null);
+  const closeButtonRef = useRef(null);
+  const lastFocusedElementRef = useRef(null);
+
+  const closeModal = () => setShowModal(false);
+
+  useEffect(() => {
+    if (!showModal) return undefined;
+
+    lastFocusedElementRef.current = document.activeElement;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const focusTimer = window.setTimeout(() => closeButtonRef.current?.focus(), 0);
+    const handleModalKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setShowModal(false);
+        return;
+      }
+
+      if (event.key !== 'Tab' || !modalRef.current) return;
+
+      const focusableElements = [...modalRef.current.querySelectorAll(
+        'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      )];
+      if (!focusableElements.length) return;
+
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+      if (event.shiftKey && document.activeElement === firstElement) {
+        event.preventDefault();
+        lastElement.focus();
+      } else if (!event.shiftKey && document.activeElement === lastElement) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleModalKeyDown);
+
+    return () => {
+      window.clearTimeout(focusTimer);
+      document.removeEventListener('keydown', handleModalKeyDown);
+      document.body.style.overflow = previousOverflow;
+      lastFocusedElementRef.current?.focus();
+    };
+  }, [showModal]);
 
   const handleChange = ({ target: { name, value } }) => {
     setFormData((previous) => ({ ...previous, [name]: value }));
@@ -44,6 +91,33 @@ const BookAppointment = () => {
       if (!previous[name]) return previous;
       const next = { ...previous };
       delete next[name];
+      return next;
+    });
+  };
+
+  const handleAppointmentDateChange = ({ target: { value } }) => {
+    const selectedDay = value ? new Date(`${value}T12:00:00`).getDay() : null;
+
+    if (selectedDay === 0) {
+      setFormData((previous) => ({ ...previous, appointmentDate: '', appointmentTime: '' }));
+      setErrors((previous) => ({
+        ...previous,
+        appointmentDate: 'Sundays are unavailable. Please choose Monday to Saturday.',
+      }));
+      return;
+    }
+
+    setFormData((previous) => ({
+      ...previous,
+      appointmentDate: value,
+      appointmentTime: selectedDay === 2 && previous.appointmentTime === 'Afternoon'
+        ? ''
+        : previous.appointmentTime,
+    }));
+    setErrors((previous) => {
+      const next = { ...previous };
+      delete next.appointmentDate;
+      delete next.appointmentTime;
       return next;
     });
   };
@@ -116,6 +190,14 @@ const BookAppointment = () => {
   };
 
   const describedBy = (field) => errors[field] ? `${field}-error` : undefined;
+  const selectedAppointmentDay = formData.appointmentDate
+    ? new Date(`${formData.appointmentDate}T12:00:00`).getDay()
+    : null;
+  const isTuesdayAppointment = selectedAppointmentDay === 2;
+  const appointmentTimeDescribedBy = [
+    isTuesdayAppointment ? 'appointmentTime-help' : '',
+    errors.appointmentTime ? 'appointmentTime-error' : '',
+  ].filter(Boolean).join(' ') || undefined;
 
   return (
     <div className="container py-5 animate__animated animate__fadeIn">
@@ -124,7 +206,7 @@ const BookAppointment = () => {
         Tell us your preferred date and time. This is a request rather than a confirmed booking; the practice will contact you to confirm availability.
       </p>
       <div className="card shadow border-0 rounded-4 p-4">
-        <form onSubmit={handleSubmit} noValidate aria-label="Appointment request form">
+        <form onSubmit={handleSubmit} noValidate aria-label="Appointment request form" aria-busy={isLoading}>
           <div className="booking-honeypot" hidden>
             <label htmlFor="website">Leave this field blank</label>
             <input id="website" name="website" type="text" value={formData.website} onChange={handleChange} tabIndex="-1" autoComplete="off" />
@@ -186,19 +268,20 @@ const BookAppointment = () => {
 
           <div className="mb-3">
             <label htmlFor="appointmentDate">Preferred Appointment Date*</label>
-            <input id="appointmentDate" type="date" className="form-control" name="appointmentDate" min={getLocalDateValue()} value={formData.appointmentDate} onChange={handleChange} required aria-invalid={Boolean(errors.appointmentDate)} aria-describedby={errors.appointmentDate ? 'appointmentDate-help appointmentDate-error' : 'appointmentDate-help'} />
-            <div id="appointmentDate-help" className="form-text">Closed Sundays and bank holidays. Monday and Saturday visits are by appointment only.</div>
+            <input id="appointmentDate" type="date" className="form-control" name="appointmentDate" min={getLocalDateValue()} value={formData.appointmentDate} onChange={handleAppointmentDateChange} required aria-invalid={Boolean(errors.appointmentDate)} aria-describedby={errors.appointmentDate ? 'appointmentDate-help appointmentDate-error' : 'appointmentDate-help'} />
+            <div id="appointmentDate-help" className="form-text">Sundays cannot be selected. We are also closed on bank holidays. Monday and Saturday visits are by appointment only.</div>
             <FieldError id="appointmentDate-error" message={errors.appointmentDate} />
           </div>
 
           <div className="mb-3">
             <label htmlFor="appointmentTime">Preferred Appointment Time*</label>
-            <select id="appointmentTime" className="form-select" name="appointmentTime" value={formData.appointmentTime} onChange={handleChange} required aria-invalid={Boolean(errors.appointmentTime)} aria-describedby={describedBy('appointmentTime')}>
+            <select id="appointmentTime" className="form-select" name="appointmentTime" value={formData.appointmentTime} onChange={handleChange} required aria-invalid={Boolean(errors.appointmentTime)} aria-describedby={appointmentTimeDescribedBy}>
               <option value="">-- Select --</option>
               <option value="Morning">Morning</option>
-              <option value="Afternoon">Afternoon</option>
+              <option value="Afternoon" disabled={isTuesdayAppointment}>Afternoon{isTuesdayAppointment ? ' — unavailable on Tuesday' : ''}</option>
               <option value="Either">Either</option>
             </select>
+            {isTuesdayAppointment && <div id="appointmentTime-help" className="form-text">Tuesday appointments are available in the morning only.</div>}
             <FieldError id="appointmentTime-error" message={errors.appointmentTime} />
           </div>
 
@@ -216,17 +299,17 @@ const BookAppointment = () => {
 
       {showModal && (
         <div className="custom-modal-backdrop" role="presentation">
-          <div className="custom-modal animate__animated animate__zoomIn" role="dialog" aria-modal="true" aria-labelledby="appointment-result-title">
+          <div ref={modalRef} className="custom-modal animate__animated animate__zoomIn" role="dialog" aria-modal="true" aria-labelledby="appointment-result-title" aria-describedby="appointment-result-message">
             <div className="modal-header bg-primary text-white rounded-top">
               <h2 id="appointment-result-title" className="modal-title h5 text-white mb-0">
                 {submissionSucceeded ? 'Request Received' : 'Request Not Sent'}
               </h2>
-              <button type="button" className="btn-close btn-close-white" aria-label="Close" onClick={() => setShowModal(false)} />
+              <button ref={closeButtonRef} type="button" className="btn-close btn-close-white" aria-label="Close appointment result" onClick={closeModal} />
             </div>
             <div className="modal-body text-center p-4" aria-live="polite">
               <i className={`bi ${submissionSucceeded ? 'bi-check-circle-fill text-success' : 'bi-exclamation-circle-fill text-danger'} fs-1 mb-3`} aria-hidden="true" />
-              <p className="fs-5">{modalMessage}</p>
-              <button className="btn btn-primary mt-3 px-4" onClick={() => setShowModal(false)}>Close</button>
+              <p id="appointment-result-message" className="fs-5">{modalMessage}</p>
+              <button type="button" className="btn btn-primary mt-3 px-4" onClick={closeModal}>Close</button>
             </div>
           </div>
         </div>

@@ -20,6 +20,7 @@ const PrivacyPolicy = lazy(() => import('./Pages/PrivacyPolicy'));
 const FreedomOfInformation = lazy(() => import('./Pages/FreedomOfInformation'));
 const TermsAndConditions = lazy(() => import('./Pages/TermsAndConditions'));
 const BookAppointment = lazy(() => import('./Pages/BookAppointment'));
+const Contact = lazy(() => import('./Pages/Contact'));
 const DispensingOfEyeglasses = lazy(() => import('./Pages/DispensingOfEyeglasses'));
 const CataractAndOtherReferrals = lazy(() => import('./Pages/CataractAndOtherReferrals'));
 const ContactLensConsultation = lazy(() => import('./Pages/ContactLensConsultation'));
@@ -60,6 +61,7 @@ function App() {
             <Route path="/freedom-of-information" element={<FreedomOfInformation />} />
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
             <Route path="/book-appointment" element={<BookAppointment />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/dispensingofeyeglasses" element={<DispensingOfEyeglasses />} />
             <Route path="/cataract-and-other-referrals" element={<CataractAndOtherReferrals />} />
             <Route path="/contact-lens-consultation" element={<ContactLensConsultation />} />

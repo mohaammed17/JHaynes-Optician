@@ -83,7 +83,7 @@ button:focus-visible {
 @media (max-width: 576px) {
   /* Reduce container padding for small screens */
   .container {
-    padding: 10px;
+    padding: 10px calc(var(--bs-gutter-x) * 0.5);
   }
   
   /* Adjust carousel height for phones */
@@ -288,11 +288,30 @@ a:hover {
   box-shadow: 0 12px 34px rgba(16, 47, 46, 0.16);
 }
 
+.navbar-enter {
+  animation: navbar-enter 0.45s ease-out both;
+}
+
+@keyframes navbar-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .logo-img {
   padding: 3px;
   background: #fff;
   border: 1px solid rgba(31, 95, 91, 0.12);
   box-shadow: 0 6px 18px rgba(16, 47, 46, 0.10) !important;
+}
+
+.site-navbar .logo-img:hover {
+  transform: scale(1.02);
 }
 
 .navbar-nav .nav-link,
@@ -323,6 +342,15 @@ a:hover {
 
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0.2rem rgba(31, 95, 91, 0.2);
+}
+
+.nav-dropdown-toggle {
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  color: var(--jh-ink);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font: inherit;
 }
 
 .dropdown-menu {
@@ -498,6 +526,226 @@ h6 {
 
 .services-section .card-title {
   color: var(--jh-teal-900);
+}
+
+/* Trust and FAQ sections */
+.trust-section {
+  background: rgba(255, 253, 250, 0.78);
+}
+
+.trust-intro {
+  max-width: 720px;
+}
+
+.trust-card {
+  padding: 1.6rem 1.25rem;
+  background: var(--jh-surface);
+  border: 1px solid var(--jh-border);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(16, 47, 46, 0.08);
+}
+
+.trust-icon,
+.contact-detail-icon {
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(135deg, var(--jh-teal-700), var(--jh-teal-900));
+  border-radius: 50%;
+  box-shadow: 0 8px 18px rgba(16, 47, 46, 0.18);
+}
+
+.trust-icon i,
+.contact-detail-icon i {
+  font-size: 1.35rem;
+}
+
+.trust-registration {
+  color: var(--jh-teal-800);
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+.faq-section {
+  background: rgba(227, 236, 230, 0.58);
+}
+
+.faq-list {
+  max-width: 900px;
+}
+
+.faq-item {
+  margin-bottom: 0.85rem;
+  overflow: hidden;
+  background: var(--jh-surface);
+  border: 1px solid var(--jh-border);
+  border-radius: 15px;
+  box-shadow: 0 8px 22px rgba(16, 47, 46, 0.07);
+}
+
+.faq-item summary {
+  display: flex;
+  min-height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  color: var(--jh-teal-900);
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary:focus-visible {
+  outline: 3px solid rgba(168, 91, 53, 0.32);
+  outline-offset: -3px;
+}
+
+.faq-item summary i {
+  flex: 0 0 auto;
+  color: var(--jh-copper);
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary i {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 0 1.2rem 1.15rem;
+  color: var(--jh-muted);
+}
+
+/* Contact page */
+.contact-hero {
+  background: linear-gradient(135deg, rgba(227, 236, 230, 0.84), rgba(248, 245, 238, 0.90));
+}
+
+.section-kicker {
+  color: var(--jh-copper-dark);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.page-title {
+  color: var(--jh-teal-800);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.page-title::after {
+  content: '';
+  display: block;
+  width: 62px;
+  height: 4px;
+  margin: 0.85rem auto 0;
+  background: var(--jh-copper);
+  border-radius: 999px;
+}
+
+.contact-intro {
+  max-width: 760px;
+}
+
+.contact-details-section {
+  margin-top: -1.5rem;
+}
+
+.contact-detail-card {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.65rem;
+  color: var(--jh-ink);
+  background: var(--jh-surface);
+  border: 1px solid var(--jh-border);
+  border-radius: 18px;
+  box-shadow: var(--jh-shadow);
+  text-align: center;
+  overflow-wrap: anywhere;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-detail-card:hover,
+.contact-detail-card:focus-visible {
+  color: var(--jh-teal-900);
+  box-shadow: 0 20px 42px rgba(16, 47, 46, 0.15);
+  transform: translateY(-3px);
+}
+
+.contact-detail-card h2 {
+  margin: 0.2rem 0 0;
+}
+
+.contact-detail-card h2::after {
+  display: none;
+}
+
+.contact-detail-card address {
+  color: var(--jh-muted);
+  font-style: normal;
+}
+
+.contact-visit-section h2.text-start::after {
+  margin-left: 0;
+}
+
+.opening-hours-list {
+  display: grid;
+  gap: 0;
+}
+
+.opening-hours-row {
+  display: grid;
+  grid-template-columns: minmax(6rem, 0.7fr) minmax(9rem, 1.3fr);
+  gap: 1rem;
+  padding: 0.72rem 0;
+  border-bottom: 1px solid var(--jh-border);
+}
+
+.opening-hours-row dt,
+.opening-hours-row dd {
+  margin: 0;
+}
+
+.opening-hours-row dd {
+  color: var(--jh-muted);
+  text-align: right;
+}
+
+.contact-map {
+  display: flex;
+  padding: 0.65rem;
+  align-items: center;
+  flex-direction: column;
+  background: var(--jh-surface);
+  border: 1px solid var(--jh-border);
+  border-radius: 18px;
+  box-shadow: var(--jh-shadow);
+}
+
+.contact-map iframe {
+  width: 100%;
+  min-height: 390px;
+  flex: 1;
+  border: 0;
+  border-radius: 13px;
+}
+
+.legal-list {
+  display: grid;
+  gap: 0.55rem;
 }
 
 /* Hero and carousel */
@@ -789,6 +1037,23 @@ label {
 
   .about-section p {
     text-align: left !important;
+  }
+
+  .contact-details-section {
+    margin-top: -0.75rem;
+  }
+
+  .contact-map iframe {
+    min-height: 300px;
+  }
+
+  .opening-hours-row {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .opening-hours-row dd {
+    text-align: left;
   }
 }
 

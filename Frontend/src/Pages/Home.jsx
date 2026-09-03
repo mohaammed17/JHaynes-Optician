@@ -4,6 +4,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Carousel from 'bootstrap/js/dist/carousel';
 import Testimonials from '../Components/Testimonials';
+import TrustSection from '../Components/TrustSection';
+import FaqSection from '../Components/FaqSection';
 import { Link } from 'react-router-dom';
 
 import slide1 from '../assets/slide1.webp';
@@ -211,6 +213,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <TrustSection />
 
       {/* Opening Times Section */}
       <section className="opening-times-section py-5 bg-light">
@@ -423,6 +427,8 @@ const Home = () => {
           
         </div>
       </section>
+
+      <FaqSection />
 
       {/* Testimonials Section */}
       <section className="testimonials-section py-5">
