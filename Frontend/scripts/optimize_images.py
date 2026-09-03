@@ -14,6 +14,7 @@ ASSETS = Path(__file__).resolve().parents[1] / "src" / "assets"
 # filename: (maximum width, WebP quality, lossless)
 IMAGES = {
     "logo.bmp": (602, 90, True),
+    "j-haynes-logo.png": (900, 90, False),
     "Annexsyslogo.png": (320, 88, True),
     "background.png": (1200, 80, False),
     "slide1.png": (1200, 82, False),
@@ -48,6 +49,13 @@ def optimize(filename: str, max_width: int, quality: int, lossless: bool) -> Non
 
     with Image.open(source) as image:
         image.load()
+        if filename == "j-haynes-logo.png":
+            alpha = image.getchannel("A")
+            visible_alpha = alpha.point(lambda value: 255 if value > 8 else 0)
+            alpha_bounds = visible_alpha.getbbox()
+            if alpha_bounds:
+                image = image.crop(alpha_bounds)
+
         if image.width > max_width:
             height = round(image.height * max_width / image.width)
             image = image.resize((max_width, height), Image.Resampling.LANCZOS)

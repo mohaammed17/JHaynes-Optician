@@ -18,7 +18,7 @@ const TermsAndConditions = () => {
 
                 <h4 className="text-info fw-bold">Information About Us</h4>
                 <p> 
-                  The Website is operated by Zahra Eyecare Ltd, trading as J Haynes Optician.
+                  The Website is operated by Zahra Eyecare Ltd, trading as J Haynes Optician. Company registration number: 12927169.
                 </p>
 
                 <h4 className="text-info fw-bold">1 - General Provisions</h4>

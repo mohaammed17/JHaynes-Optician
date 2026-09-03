@@ -196,7 +196,7 @@ const Home = () => {
 
       {/* About Section */}
       <section id="about" className="about-section py-5 bg-light">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center mx-0">
           <div className="col-12 col-md-10 col-lg-8 mb-4">
             <div data-aos="zoom-in-up" className="card h-100 shadow-sm border-0 rounded-4 p-3">
               <h5 className="fw-bold text-info text-center"><strong>About Us</strong></h5>

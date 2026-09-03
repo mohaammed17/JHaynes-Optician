@@ -3,7 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Collapse from 'bootstrap/js/dist/collapse';
 import 'bootstrap/js/dist/dropdown';
-import logo from '../assets/logo.webp';
+import logo from '../assets/j-haynes-logo.webp';
 import '../App.css';
 
 function Navbar() {
@@ -51,10 +51,10 @@ function Navbar() {
           <Link to="/" className="navbar-brand d-flex align-items-center">
             <motion.img
               src={logo}
-              alt="logo"
+              alt="J Haynes Optician"
               className="logo-img me-2 rounded shadow-sm"
-              width="602"
-              height="142"
+              width="900"
+              height="145"
               decoding="async"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 1.1, rotate: 0 }}  // Ensures no tilt when tapped
