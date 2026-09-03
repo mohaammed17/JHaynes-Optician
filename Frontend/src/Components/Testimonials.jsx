@@ -116,6 +116,7 @@ const Testimonials = () => {
           variant="outline-primary"
           href="https://www.google.com/maps/place/J+Haynes+Optician/@52.7717146,-1.2056654,17z/data=!4m8!3m7!1s0x4879e0b008419ae1:0x304db26ab7c7e26a!8m2!3d52.7717146!4d-1.2056654!9m1!1b1!16s%2Fg%2F1tdkx62_"
           target="_blank"
+          rel="noopener noreferrer"
           style={{ fontWeight: 'bold', padding: '10px 20px', fontSize: '1rem' }}
         >
           View All Reviews

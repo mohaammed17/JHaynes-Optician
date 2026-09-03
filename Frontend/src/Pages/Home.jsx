@@ -137,7 +137,7 @@ const Home = () => {
                           />
                         </div>
                         <div className="carousel-content text-center position-absolute w-100">
-                          <h1 className="text-white fw-bold">Advanced Lens Solutions</h1>
+                          <h2 className="carousel-heading text-white fw-bold">Advanced Lens Solutions</h2>
                           <p className="text-light fs-5">
                             Dual protection for modern lifestyles.<br />
                             Reduce digital strain indoors and enjoy adaptive clarity outdoors.
@@ -166,7 +166,11 @@ const Home = () => {
                       <div className="carousel-overlay" />
                       <div className="d-flex justify-content-center align-items-center h-100">
                         <div className="carousel-content text-center">
-                          <h1 className="text-white fw-bold">{slide.title}</h1>
+                          {index === 0 ? (
+                            <h1 className="carousel-heading text-white fw-bold">{slide.title}</h1>
+                          ) : (
+                            <h2 className="carousel-heading text-white fw-bold">{slide.title}</h2>
+                          )}
                           <p className="text-light fs-5" dangerouslySetInnerHTML={{ __html: slide.subtitle }} />
                           {slide.path.startsWith('#') ? (
                             <a href={slide.path} className="btn btn-primary mt-3">{slide.button}</a>
@@ -199,7 +203,7 @@ const Home = () => {
         <div className="row justify-content-center mx-0">
           <div className="col-12 col-md-10 col-lg-8 mb-4">
             <div data-aos="zoom-in-up" className="card h-100 shadow-sm border-0 rounded-4 p-3">
-              <h5 className="fw-bold text-info text-center"><strong>About Us</strong></h5>
+              <h2 className="h5 fw-bold text-info text-center"><strong>About Us</strong></h2>
               <p className="text-muted fw-bold" style={{ textAlign: 'justify' }}>
                 We are independent opticians in Loughborough, dedicated to looking after your eyes. We pride ourselves on providing a professional, personal, and friendly service to the community, which may not always be possible at regular high-street practices. Whether you require spectacles or not, we are committed to delivering the highest level of eye care. We offer private eye care and have been awarded a contract by the National Health Service (NHS) to provide NHS-funded eye-care services.
               </p>

@@ -93,7 +93,7 @@ const FreedomOfInformation = () => {
 
               <h5 className="text-info fw-bold mt-4">Financial and Funding Information</h5>
               <p className="text-muted" style={{ textAlign: 'justify' }}>
-                NHS sight-test fees are set nationally and may vary across the United Kingdom.
+                J Haynes Optician currently receives £24.13 for each NHS sight test performed in England. Sight-test fees differ in Northern Ireland, Scotland and Wales.
                 <br />
                 Please refer to the websites shown below for up-to-date information on this subject. J Haynes Optician can inform you of the current cost of an eye test for those who do not qualify for NHS assistance.
                 <br />If you would like further information about the value of NHS vouchers accepted by J Haynes Optician and NHS charges please visit:<br></br>

@@ -10,10 +10,10 @@ const SpecialOffers = () => {
   }, []);
 
   const offers = [
-    "2 pairs of single vision glasses for £60",
-    "2 Pairs of Varifocals or Bifocals for £139",
-    "Single Vision Prescription Sunglasses for £55",
-    "Varifocal or Bifocal sunglasses for £114",
+    "2 pairs of single vision glasses for £75",
+    "2 Pairs of Varifocals or Bifocals for £167",
+    "Single Vision Prescription Sunglasses for £68",
+    "Varifocal or Bifocal sunglasses for £138",
     "Free NHS-funded glasses available for children and individuals receiving benefits.",
     "Free one month trial on contact lenses.",
     "We offer express on-the-hour glazing services for most single vision lens glasses."

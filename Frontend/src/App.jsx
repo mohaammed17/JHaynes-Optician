@@ -4,6 +4,8 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from './Components/ScrollToTop';
+import Seo from './Components/Seo';
+import MobileActionBar from './Components/MobileActionBar';
 
 const Home = lazy(() => import('./Pages/Home'));
 const EyeCare = lazy(() => import('./Pages/EyeCare'));
@@ -25,6 +27,7 @@ const SaleOfOpticalProduct = lazy(() => import('./Pages/SaleOfOpticalProduct'));
 const SafetyGlasses = lazy(() => import('./Pages/SafetyGlasses'));
 const GlazingOfSpectacles = lazy(() => import('./Pages/GlazingOfSpectacles'));
 const OpticalCoherenceTomography = lazy(() => import('./Pages/OpticalCoherenceTomography'));
+const NotFound = lazy(() => import('./Pages/NotFound'));
 
 const PageLoading = () => (
   <div className="page-loading" role="status" aria-live="polite">
@@ -36,10 +39,12 @@ const PageLoading = () => (
 function App() {
   return (
     <div className="app-wrapper">
+      <a className="skip-link" href="#main-content">Skip to main content</a>
       <Navbar />
       <ScrollToTop/>
+      <Seo />
       
-      <main className="main-content">
+      <main id="main-content" className="main-content" tabIndex="-1">
         <Suspense fallback={<PageLoading />}>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -62,10 +67,12 @@ function App() {
             <Route path="/safety-glasses" element={<SafetyGlasses />} />
             <Route path="/glazing-of-spectacles" element={<GlazingOfSpectacles />} />
             <Route path="/optical-coherence-tomography" element={<OpticalCoherenceTomography />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </main>
       <Footer />
+      <MobileActionBar />
     </div>
   );
 }
