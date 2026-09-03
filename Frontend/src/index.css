@@ -468,6 +468,12 @@ h6 {
   box-shadow: var(--jh-shadow) !important;
 }
 
+.card.image-background-card {
+  background:
+    linear-gradient(rgba(255, 253, 250, 0.68), rgba(255, 253, 250, 0.68)),
+    var(--card-background-image) center / cover no-repeat !important;
+}
+
 .service-item {
   position: relative;
   overflow: hidden;
@@ -758,6 +764,12 @@ label {
 
   .card {
     box-shadow: 0 10px 26px rgba(16, 47, 46, 0.10) !important;
+  }
+
+  .card.image-background-card {
+    background:
+      linear-gradient(rgba(255, 253, 250, 0.76), rgba(255, 253, 250, 0.76)),
+      var(--card-background-image) center / cover no-repeat !important;
   }
 
   .location-section iframe {

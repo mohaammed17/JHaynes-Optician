@@ -23,11 +23,9 @@ const ChildrenZone = () => {
           {/* "Why Children’s Eye Care Matters" card */}
           <div className="col-lg-6" data-aos="fade-right">
             <div
-              className="card shadow border-0 rounded-4 p-4 h-100"
+              className="card image-background-card shadow border-0 rounded-4 p-4 h-100"
               style={{
-                background: `linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(${slide2})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
+                '--card-background-image': `url(${slide2})`
               }}
             >
               <div
@@ -57,11 +55,9 @@ const ChildrenZone = () => {
           {/* "Children’s Glasses & Lenses" card */}
           <div className="col-lg-6" data-aos="fade-left">
             <div
-              className="card shadow border-0 rounded-4 p-4 h-100"
+              className="card image-background-card shadow border-0 rounded-4 p-4 h-100"
               style={{
-                background: `linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(${img1})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
+                '--card-background-image': `url(${img1})`
               }}
             >
               <div

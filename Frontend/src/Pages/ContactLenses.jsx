@@ -21,14 +21,9 @@ const ContactLenses = () => {
           <div className="col-lg-10">
             <div
               data-aos="zoom-in-up"
-              className="card border-0 shadow rounded-4 p-4"
+              className="card image-background-card border-0 shadow rounded-4 p-4"
               style={{
-                backgroundImage: `url(${lensesImage})`, // Use the imported image here
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                backgroundBlendMode: "lighten",
-                backgroundColor: "rgba(255,255,255,0.4)"
+                '--card-background-image': `url(${lensesImage})`
               }}
             >
               <div className="card-body" style={{ color: "#111", textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)" }}>
