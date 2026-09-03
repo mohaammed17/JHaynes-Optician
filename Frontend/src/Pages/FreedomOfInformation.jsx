@@ -73,6 +73,8 @@ const FreedomOfInformation = () => {
                 <br />
                 Zahra Eyecare Ltd company registration number: 12927169.
                 <br />
+                GOC number: CO-33453.
+                <br />
                 Details of all opticians and optometrists employed by J Haynes Optician can be found in store. Please contact J Haynes Optician directly to obtain this information.
                 <br />
                 Alternatively, details of all UK registered opticians can be obtained from the General Optical Council:<br></br>Please contact the General Optical Council via their website at

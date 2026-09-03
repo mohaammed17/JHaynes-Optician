@@ -26,6 +26,7 @@ export default function Footer() {
             <p>
               Zahra Eyecare Ltd trading as J Haynes Optician.<br />
               Company registration number: 12927169<br />
+              GOC number: CO-33453<br />
               35 High Street, Loughborough, Leicestershire, LE11 2PZ
             </p>
             <p className="mt-2">

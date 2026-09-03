@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
         </p>
 
         <p className="text-muted" style={{ textAlign: 'justify' }}>
-          The data controller is Zahra Eyecare Ltd, trading as J Haynes Optician. Company registration number: 12927169.
+          The data controller is Zahra Eyecare Ltd, trading as J Haynes Optician. Company registration number: 12927169. GOC number: CO-33453.
         </p>
 
         <p className="text-muted" style={{ textAlign: 'justify' }}>
