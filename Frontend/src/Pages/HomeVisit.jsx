@@ -56,7 +56,7 @@ const HomeVisit = () => {
     
             <div className="text-center mt-4">
               <Link to="/book-appointment" className="btn btn-primary btn-lg rounded-pill shadow-sm">
-                Book Appointment
+                Request an Appointment
               </Link>
             </div>
           </div>

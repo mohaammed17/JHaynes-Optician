@@ -82,7 +82,7 @@ const ChildrenZone = () => {
                 </p>
                 <div className="text-center mt-3">
                   <Link to="/book-appointment" className="btn btn-primary px-4">
-                    Book Appointment
+                    Request an Appointment
                   </Link>
                 </div>
               </div>
@@ -96,7 +96,7 @@ const ChildrenZone = () => {
             <div className="col-md-8">
               <h2 className="text-primary fw-bold">Don't Underestimate Your Child's Eyecare</h2>
               <p className="lead text-muted">
-                A bright smile begins with great vision. Ensure your child’s eyes are well cared for – book a sight test today!
+                A bright smile begins with great vision. Ensure your child’s eyes are well cared for – request a sight test today!
               </p>
               <p className="fs-4 fw-bold">
                 Call: <span style={{ color: 'var(--jh-copper)', fontWeight: 700 }}>01509 260023</span>

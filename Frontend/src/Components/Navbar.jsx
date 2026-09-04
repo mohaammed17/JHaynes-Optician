@@ -79,20 +79,11 @@ function Navbar() {
           {/* Collapsible Content */}
           <div ref={collapseRef} className="collapse navbar-collapse" id="navbarContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-2">
-              {[
-                { label: 'Home', to: '/' },
-                { label: 'Eye Care', to: '/eyecare' },
-                { label: 'Contact Lenses', to: '/contactlenses' },
-                { label: 'Special Offers', to: '/specialoffers' },
-                { label: 'Children Zone', to: '/childrenzone' },
-                { label: 'Contact', to: '/contact' }
-              ].map((link) => (
-                <li className="nav-item" key={link.to}>
-                  <NavLink to={link.to} className="nav-link" onClick={handleNavLinkClick}>
-                    {link.label}
-                  </NavLink>
-                </li>
-              ))}
+              <li className="nav-item">
+                <NavLink to="/" className="nav-link" onClick={handleNavLinkClick}>
+                  Home
+                </NavLink>
+              </li>
 
               <li className="nav-item dropdown">
                 <button
@@ -161,12 +152,26 @@ function Navbar() {
                   </li>
                 </ul>
               </li>
+
+              {[
+                { label: 'Eye Care', to: '/eyecare' },
+                { label: 'Contact Lenses', to: '/contactlenses' },
+                { label: 'Special Offers', to: '/specialoffers' },
+                { label: 'Children Zone', to: '/childrenzone' },
+                { label: 'Contact', to: '/contact' }
+              ].map((link) => (
+                <li className="nav-item" key={link.to}>
+                  <NavLink to={link.to} className="nav-link" onClick={handleNavLinkClick}>
+                    {link.label}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
 
-            {/* Book Button */}
+            {/* Appointment request button */}
             <div className="d-flex justify-content-lg-end justify-content-center">
               <NavLink to="/book-appointment" className="btn btn-primary px-3 py-2 rounded-pill border-0 shadow-sm" onClick={handleNavLinkClick}>
-                Book an Appointment
+                Request an Appointment
               </NavLink>
             </div>
           </div>

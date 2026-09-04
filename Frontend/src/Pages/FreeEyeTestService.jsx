@@ -178,11 +178,11 @@ const FreeEyeTestService = () => {
           </div>
         </div>
 
-        {/* Unified Book Appointment Button */}
+        {/* Unified appointment request button */}
         <div className="row" data-aos="zoom-in">
           <div className="col-lg-10 mx-auto text-center">
             <Link to="/book-appointment" className="btn btn-primary px-4">
-              Book Appointment
+              Request an Appointment
             </Link>
           </div>
         </div>

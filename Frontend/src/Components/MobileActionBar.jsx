@@ -27,7 +27,7 @@ export default function MobileActionBar() {
       </a>
       <Link to="/book-appointment" className="mobile-action-link mobile-action-link--primary">
         <i className="bi bi-calendar-check-fill" aria-hidden="true" />
-        <span>Book</span>
+        <span>Request</span>
       </Link>
     </nav>
   );

@@ -11,7 +11,7 @@ const routeSeo = {
   '/contactlenses': ['Contact Lenses | J Haynes Optician', 'Contact lens advice, fitting and ongoing care from J Haynes Optician in Loughborough.'],
   '/specialoffers': ['Special Offers | J Haynes Optician', 'View current eyewear and eye care offers available from J Haynes Optician in Loughborough.'],
   '/childrenzone': ["Children's Eye Care | J Haynes Optician", 'Friendly eye examinations, advice and eyewear for children at J Haynes Optician in Loughborough.'],
-  '/freeeyetest': ['Eye Examinations | J Haynes Optician', 'Book a thorough eye examination with your independent Loughborough optician. NHS-funded eye care may be available.'],
+  '/freeeyetest': ['Eye Examinations | J Haynes Optician', 'Request a thorough eye examination with your independent Loughborough optician. NHS-funded eye care may be available.'],
   '/corporate-eye-care': ['Corporate Eye Care | J Haynes Optician', 'On-site and workplace eye care services for companies and employees in and around Loughborough.'],
   '/home-visit': ['Home Visit Optician | J Haynes Optician', 'Professional home visiting optician services for eligible customers in and around Loughborough.'],
   '/hearing-test': ['Hearing Tests | J Haynes Optician', 'Professional hearing assessments and audiology services available through J Haynes Optician.'],

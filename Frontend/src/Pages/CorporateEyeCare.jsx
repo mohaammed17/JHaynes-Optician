@@ -34,7 +34,7 @@ const CorporateEyeCare = () => {
               </p>
               <div className="text-center mt-4">
                 <Link to="/book-appointment" className="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
-                  Book Appointment
+                  Request an Appointment
                 </Link>
               </div>
             </div>

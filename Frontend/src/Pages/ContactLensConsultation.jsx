@@ -39,7 +39,7 @@ const ContactLensConsultation = () => {
                     <strong>Take-Home Specs</strong> – Leave with a printed copy of your personalised contact-lens prescription and care instructions—ready to order whenever you choose.
                   </p>
                   <p className="text-muted" style={{ textAlign: 'justify' }}>
-                    Book your contact-lens visit today and see the world with clarity and confidence.
+                    Request your contact-lens visit today and see the world with clarity and confidence.
                   </p>
                 </div>
                 {/* Image Column */}

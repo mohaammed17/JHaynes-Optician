@@ -45,7 +45,7 @@ const DispensingOfEyeglasses = () => {
                   </p>
                   <div className="text-center mt-4">
                     <Link to="/book-appointment" className="btn btn-primary px-4">
-                      Book Your Appointment
+                      Request an Appointment
                     </Link>
                   </div>
                 </div>

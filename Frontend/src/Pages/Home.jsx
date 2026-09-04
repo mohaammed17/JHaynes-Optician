@@ -49,7 +49,7 @@ const Home = () => {
       image: homevisitng,
       title: "Your Home Visiting Optician",
       subtitle: "Bringing quality eyecare to your doorstep",
-      button: "Book a Visit",
+      button: "Request an Appointment",
       path: "/book-appointment"
     },
     {

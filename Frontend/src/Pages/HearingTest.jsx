@@ -28,11 +28,11 @@ const HearingTest = () => {
           If further assessment is required, a qualified audiologist will work with you to identify the most appropriate hearing solution and guide you through the process with care and clarity.
         </p>
         <p className="text-muted fw-semibold">
-          Take the first step toward better hearing — book your hearing test with us today.
+          Take the first step toward better hearing — request your hearing test with us today.
         </p>
         <div className="text-center mt-4">
           <Link to="/book-appointment" className="btn btn-primary px-4">
-            Book Appointment
+            Request an Appointment
           </Link>
         </div>
       </div>
