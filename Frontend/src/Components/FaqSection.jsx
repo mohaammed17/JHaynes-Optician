@@ -146,7 +146,7 @@ const faqItems = [
     ),
   },
   {
-    question: 'Is it safe for me to drive?',
+    question: 'Could changes in my eyesight affect whether I can drive safely and legally?',
     answer: (
       <>
         You must meet the DVLA eyesight standards whenever you drive. Changes in vision and conditions such as
