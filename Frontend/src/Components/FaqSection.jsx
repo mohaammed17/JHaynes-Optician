@@ -4,7 +4,7 @@ const faqItems = [
   {
     question: 'Is an online appointment request confirmed immediately?',
     answer:
-      'No. Your preferred date and time are sent to the practice, and the team will contact you to confirm availability.',
+      'Your preferred date and time are sent to the practice, and the team will contact you to confirm availability.',
   },
   {
     question: 'Who is eligible for NHS-funded sight tests and help with the cost of glasses?',
@@ -42,7 +42,7 @@ const faqItems = [
     question: 'Do you fit and supply contact lenses?',
     answer: (
       <>
-        Yes. We offer new fittings, handling guidance and aftercare for several types of contact lenses. Find out
+        We offer new fittings, handling guidance and aftercare for several types of contact lenses. Find out
         more on our <Link to="/contactlenses">Contact Lenses page</Link>.
       </>
     ),
@@ -78,7 +78,7 @@ const faqItems = [
   {
     question: 'What should I bring to my eye examination?',
     answer:
-      'Please bring your current glasses or contact lenses, a copy of your previous prescription if available, and a list of any medicines you take. For a contact lens appointment, it is also helpful to bring your current lenses, packaging and lens-care products.',
+      'Please bring your current glasses or contact lenses, a copy of your previous prescription if available, and a list of any medicines you take. If you are attending a contact lens consultation, it is preferable to wear your contact lenses to the appointment unless we have advised you otherwise. It is also helpful to bring your lens packaging and lens-care products.',
   },
   {
     question: 'What do the numbers on my prescription mean?',

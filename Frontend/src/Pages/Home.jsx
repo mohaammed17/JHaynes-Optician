@@ -209,7 +209,7 @@ const Home = () => {
             <div data-aos="zoom-in-up" className="card h-100 shadow-sm border-0 rounded-4 p-3">
               <h2 className="h5 fw-bold text-info text-center"><strong>About Us</strong></h2>
               <p className="text-muted fw-bold" style={{ textAlign: 'justify' }}>
-                We are independent opticians in Loughborough, dedicated to looking after your eyes. We pride ourselves on providing a professional, personal, and friendly service to the community, which may not always be possible at regular high-street practices. Whether you require spectacles or not, we are committed to delivering the highest level of eye care. We offer private eye care and have been awarded a contract by the National Health Service (NHS) to provide NHS-funded eye-care services.
+                We are an independent optician in Loughborough, dedicated to looking after your eyes. We pride ourselves on providing a professional, personal, and friendly service to the community, which may not always be possible at regular high-street practices. Whether you require spectacles or not, we are committed to delivering the highest level of eye care. We offer private eye care and have been awarded a contract by the National Health Service (NHS) to provide NHS-funded eye-care services.
               </p>
             </div>
           </div>
