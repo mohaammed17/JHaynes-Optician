@@ -9,7 +9,8 @@ const TermsAndConditions = () => {
           <div className="col-lg-10">
             <div className="card shadow border-0 rounded-4 p-4" >
               <h2 className="text-center text-primary fw-bold mb-4">
-                Terms and Conditions of Use of Website ("Terms of Use")
+                Terms and Conditions of Use of Website
+                <span className="d-block fs-4 mt-2">("Terms of Use")</span>
               </h2>
               <div className="text-muted" style={{ textAlign: 'justify', whiteSpace: 'pre-line' }}>
                 <p> 
