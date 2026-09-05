@@ -26,7 +26,8 @@ const faqItems = [
   },
   {
     question: 'Are children eligible for free NHS eye tests?',
-    answer: 'Children under 16, and young people aged 16 to 18 in full-time education, are eligible for NHS-funded sight tests.',
+    answer:
+      'Children under 16, and young people aged 16 to 18 in full-time education, are eligible for NHS-funded sight tests and help towards the cost of glasses.',
   },
   {
     question: 'Can I arrange an eye test at home?',

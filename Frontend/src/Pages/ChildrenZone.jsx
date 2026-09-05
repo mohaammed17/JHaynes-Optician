@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 import slide2 from '../assets/slide2.webp';
 import img1 from '../assets/img1.webp';
-import mustafaKid from '../assets/mustafa-kid.webp';
+import mustafaKid from '../assets/mustafa-kid-updated.png';
 
 const ChildrenZone = () => {
   useEffect(() => {
