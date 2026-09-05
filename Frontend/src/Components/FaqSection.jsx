@@ -3,19 +3,16 @@ import { Link } from 'react-router-dom';
 const faqItems = [
   {
     question: 'Is an online appointment request confirmed immediately?',
-    answer: (
-      <>
-        No. Your preferred date and time are sent to the practice, and the team will contact you to confirm
-        availability. You can <Link to="/book-appointment">request an appointment here</Link>.
-      </>
-    ),
+    answer:
+      'No. Your preferred date and time are sent to the practice, and the team will contact you to confirm availability.',
   },
   {
-    question: 'Do you provide NHS-funded sight tests?',
+    question: 'Who is eligible for NHS-funded sight tests and help with the cost of glasses?',
     answer: (
       <>
-        Yes, NHS-funded sight tests are available for eligible patients. You can read the current eligibility
-        guidance on the{' '}
+        Eligibility depends on factors such as your age, circumstances and certain medical conditions. The NHS may
+        also provide optical vouchers to help eligible patients with the cost of glasses or contact lenses. Read the
+        current eligibility guidance on the{' '}
         <a
           href="https://www.nhs.uk/nhs-services/opticians/free-nhs-eye-tests-and-optical-vouchers/"
           target="_blank"
@@ -58,10 +55,6 @@ const faqItems = [
     question: 'How long does an eye examination take?',
     answer:
       'A standard eye examination usually takes between 30 and 40 minutes. Additional assessments, such as an OCT scan, may require a further 10 to 15 minutes.',
-  },
-  {
-    question: 'When is the practice open?',
-    answer: 'We are open Tuesday morning and Wednesday to Friday during the day. Monday and Saturday visits are by appointment only, and we are closed on Sundays and bank holidays.',
   },
 ];
 

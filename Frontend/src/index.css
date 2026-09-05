@@ -502,6 +502,24 @@ h6 {
     var(--card-background-image) center / cover no-repeat !important;
 }
 
+.card.image-background-card.children-info-card {
+  background:
+    linear-gradient(rgba(255, 253, 250, 0.86), rgba(255, 253, 250, 0.86)),
+    var(--card-background-image) center / cover no-repeat !important;
+}
+
+.children-info-card .text-muted {
+  color: #263f3d !important;
+}
+
+.children-info-card .text-info {
+  color: var(--jh-teal-900) !important;
+}
+
+.children-info-card .text-success {
+  color: #225b45 !important;
+}
+
 .service-item {
   position: relative;
   overflow: hidden;
@@ -1017,6 +1035,12 @@ label {
   .card.image-background-card {
     background:
       linear-gradient(rgba(255, 253, 250, 0.76), rgba(255, 253, 250, 0.76)),
+      var(--card-background-image) center / cover no-repeat !important;
+  }
+
+  .card.image-background-card.children-info-card {
+    background:
+      linear-gradient(rgba(255, 253, 250, 0.9), rgba(255, 253, 250, 0.9)),
       var(--card-background-image) center / cover no-repeat !important;
   }
 

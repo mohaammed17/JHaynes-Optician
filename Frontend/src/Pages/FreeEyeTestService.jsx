@@ -38,7 +38,7 @@ const FreeEyeTestService = () => {
                 Because eye conditions often develop slowly and can be painless, you may not notice any initial symptoms. That’s why it is essential to have your eyes examined regularly by an optometrist or ophthalmic medical practitioner. The sooner any problem is detected, the greater the chance of it being treated successfully.
               </p>
               <p className="text-muted" style={{ textAlign: 'justify' }}>
-                This leaflet explains what happens during an eye examination at our practice and how we will take care of your vision. We recommend that you read it carefully as it will help you to understand and look after your eyesight.
+                This information explains what happens during an eye examination at our practice and how we will take care of your vision. We recommend reading it carefully, as it will help you understand and look after your eyesight.
               </p>
               <p className="text-muted" style={{ textAlign: 'justify' }}>
                 If you have any concerns about your vision, you should contact us immediately. We provide quality eyecare and will always take as much time as necessary to examine your eyes thoroughly and answer any questions you may have.
@@ -110,7 +110,7 @@ const FreeEyeTestService = () => {
                 The key to good vision is having regular eye examinations. Their importance cannot be overstated because they provide an essential health check as well as helping you to see better with an up-to-date prescription.
               </p>
               <p className="text-muted" style={{ textAlign: 'justify' }}>
-                At your appointment you’ll receive expert advice on your vision and on choosing the most suitable eyewear for your needs. As independent opticians we are also free to select the best products from any manufacturer. This means we’re able to provide you with a wide choice of quality frames and advanced lenses at sensible prices.
+                At your appointment you’ll receive expert advice on your vision and on choosing the most suitable eyewear for your needs. Because we are independent opticians, you are also free to select the best products from any manufacturer. This means we’re able to provide you with a wide choice of quality frames and advanced lenses at sensible prices.
               </p>
               <p className="text-muted" style={{ textAlign: 'justify' }}>
                 Our practice offers both NHS and private eye examinations. Many people are also eligible for NHS help with the cost of their glasses, so please ask us for further details.

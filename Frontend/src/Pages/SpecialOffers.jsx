@@ -50,7 +50,8 @@ const SpecialOffers = () => {
                 {/* Note for the whole box */}
                 <div className="text-center mt-3">
                   <p className="text-muted" style={{ fontStyle: 'italic', fontSize: '0.9rem' }}>
-                    <strong>Note:</strong> We also offer upgrades on frames and lenses at extra cost.
+                    <strong>Please note:</strong> All prices are subject to change. Frame and lens upgrades are
+                    available at an additional cost.
                   </p>
                 </div>
 

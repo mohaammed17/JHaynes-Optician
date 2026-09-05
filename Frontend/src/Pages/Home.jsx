@@ -84,6 +84,7 @@ const Home = () => {
     {
       // New slide for Hearing Test & Audiology Services
       image: audiologist,
+      imagePosition: "32% 28%",
       title: "Hearing Test & Audiology Services",
       subtitle: "Check Your Hearing Today - Expert Care You Can Trust",
       button: "Learn More",
@@ -164,6 +165,7 @@ const Home = () => {
                         loading={index === 0 ? 'eager' : 'lazy'}
                         fetchPriority={index === 0 ? 'high' : 'low'}
                         decoding={index === 0 ? 'sync' : 'async'}
+                        style={{ objectPosition: slide.imagePosition || 'center' }}
                       />
                       <div className="carousel-overlay" />
                       <div className="d-flex justify-content-center align-items-center h-100">

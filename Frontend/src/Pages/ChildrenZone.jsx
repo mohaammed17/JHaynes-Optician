@@ -23,7 +23,7 @@ const ChildrenZone = () => {
           {/* "Why Children’s Eye Care Matters" card */}
           <div className="col-lg-6" data-aos="fade-right">
             <div
-              className="card image-background-card shadow border-0 rounded-4 p-4 h-100"
+              className="card image-background-card children-info-card shadow border-0 rounded-4 p-4 h-100"
               style={{
                 '--card-background-image': `url(${slide2})`
               }}
@@ -31,8 +31,7 @@ const ChildrenZone = () => {
               <div
                 className="card-body"
                 style={{
-                  color: "#111",
-                  textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)"
+                  color: "#111"
                 }}
               >
                 <h5 className="text-info fw-bold" style={{ fontSize: '1.75rem' }}>Why Children’s Eye Care Matters</h5>
@@ -55,7 +54,7 @@ const ChildrenZone = () => {
           {/* "Children’s Glasses & Lenses" card */}
           <div className="col-lg-6" data-aos="fade-left">
             <div
-              className="card image-background-card shadow border-0 rounded-4 p-4 h-100"
+              className="card image-background-card children-info-card shadow border-0 rounded-4 p-4 h-100"
               style={{
                 '--card-background-image': `url(${img1})`
               }}
@@ -63,8 +62,7 @@ const ChildrenZone = () => {
               <div
                 className="card-body"
                 style={{
-                  color: "#111",
-                  textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)"
+                  color: "#111"
                 }}
               >
                 <h5 className="text-info fw-bold" style={{ fontSize: '1.75rem' }}>Children’s Glasses & Lenses</h5>

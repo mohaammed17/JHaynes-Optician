@@ -17,7 +17,7 @@ const CataractAndOtherReferrals = () => {
           <div className="col-lg-10">
             <div className="card border-0 shadow rounded-4 p-4 bg-white">
               <p className="text-muted" style={{ textAlign: 'justify' }}>
-                We do direct referrals of Cataracts and other eye problems to the hospital. The referral pathway through the general practitioner is not necessary.
+                We do direct referrals of cataracts and other eye problems to the hospital. The referral pathway through the general practitioner is not necessary. If you prefer to pursue treatment privately, we can arrange a private referral for you.
               </p>
             </div>
           </div>
